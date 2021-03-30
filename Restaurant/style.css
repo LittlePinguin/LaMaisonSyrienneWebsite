@@ -119,19 +119,19 @@ header #menu-bar{
 .home::before,
 .home::after{
     content: '';
+    background: darkcyan;
     position: absolute;
+    border-radius: 3rem;
     top: 5rem;
     right: -6rem;
-    background: darkcyan;
-    border-radius: 3rem;
     transform: rotate(-45deg);
     height: 30rem;
     width: 70rem;
     z-index: -2;
-    animation: animte 1s linear 1;
+    animation: animateHome 1s linear 1;
 }
 
-@keyframes animte{
+@keyframes animateHome{
     0%{
         transform: rotate(45deg) translateY(-40rem);
     }
