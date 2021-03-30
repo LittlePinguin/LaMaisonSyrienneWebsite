@@ -18,6 +18,7 @@ $(document).ready(function(){
     
 
     // scroll spy
+    // not working
     // $(window).on('scroll load', function(){
     //     $('section').each(function(){
     //         let top = $(window).scrollTop();
@@ -32,16 +33,3 @@ $(document).ready(function(){
     //     });
     // });
 });
-
-// // menu tabs handler
-// const menuTabs = document.querySelector(".menu-tabs");
-// menuTabs.addEventListener("click", function(e){
-//     if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
-//         const target = e.target.getAttribute("data-target");
-//         menuTabs.querySelector(".active").classList.remove("active");
-//         e.target.classList.add("active");
-//         const menuSection = document.querySelector(".menu");
-//         menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
-//         menuSection.querySelector(target).classList.add("active");
-//     }
-// });
