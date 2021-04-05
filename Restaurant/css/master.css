@@ -19,11 +19,14 @@ html {
 }
 
 .nav-tabs > li > a:hover {
-    color: #22533d
+    color: #0d4f31;
+    background-color: #edeff0;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-    background-color: #f8f9fa;
+    background-color: #4c8f4a;
+    border-bottom: 1px solid #4c8f4a;
+    color: #fff;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -54,7 +57,7 @@ html {
 .home-container{
     padding-top: 8%;
     padding-bottom: 25%;
-    background-color: darkgrey;
+    background-color: #4c8f4a;
 }
 
 .home-img{
@@ -68,4 +71,5 @@ html {
     display: inline-block;
     font-family: 'Rock Salt', cursive;
     padding-top: 8%;
+    font-weight: 600;
 }

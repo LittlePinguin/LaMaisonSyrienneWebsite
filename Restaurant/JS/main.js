@@ -1,5 +1,12 @@
 $(document).ready(function(){
     $(this).scrollTop(0);
+
+    var size = $(window).width();
+
+    $('h1').css({
+        "font-size":"40px"
+    });
+
     $('.nav-link').removeClass('active');
     $('.nav-link').on('click', function(){
         $('.nav-link').each(function(){
