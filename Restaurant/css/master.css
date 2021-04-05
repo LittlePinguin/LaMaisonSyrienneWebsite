@@ -1,0 +1,71 @@
+body {
+    padding-top: 37px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+        background-color: #f8f9fa
+}
+
+.navbar-brand{
+    color: #337657
+}
+
+.nav-link{
+    color: #337657;
+}
+
+.nav-tabs > li > a:hover {
+    color: #22533d
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #f8f9fa;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157, 157, 157, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(157, 157, 157, 0.5);
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 180%
+}
+
+.tab-btm{
+    bottom: 0;
+}
+
+.nav-tabs{
+    position: absolute;
+}
+
+.nav-tabs .nav-link {
+    font-size: 125%;
+}
+
+.home-container{
+    padding-top: 8%;
+    padding-bottom: 25%;
+    background-color: darkgrey;
+}
+
+.home-img{
+    max-width: 50%;
+    height: auto;
+    /* margin: 4% 7% 8% 43%; */
+    float: right;
+}
+.something{
+    padding-left: 10%;
+    display: inline-block;
+    font-family: 'Rock Salt', cursive;
+    padding-top: 8%;
+}
