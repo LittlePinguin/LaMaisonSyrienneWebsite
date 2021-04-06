@@ -1,0 +1,181 @@
+body {
+    padding-top: 37px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title{
+    font-size: 55px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 100px 0 50px 0;
+}
+
+.title span{
+    color: #337657;
+}
+
+
+.navbar{
+    background-color: #f8f9fa
+}
+
+.navbar-brand{
+    color: #337657
+}
+
+.nav-link{
+    color: #337657;
+}
+
+.nav-tabs > li > a:hover {
+    color: #0d4f31;
+    background-color: #edeff0;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #4c8f4a;
+    border-bottom: 1px solid #4c8f4a;
+    color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157, 157, 157, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(157, 157, 157, 0.5);
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 180%
+}
+
+.tab-btm{
+    bottom: 0;
+}
+
+.nav-tabs{
+    position: absolute;
+}
+
+.nav-tabs .nav-link {
+    font-size: 125%;
+}
+
+.home-container{
+    padding-top: 8%;
+    padding-bottom: 25%;
+    background-color: lightgrey;
+}
+
+.home-img{
+    max-width: 50%;
+    height: auto;
+    /* margin: 4% 7% 8% 43%; */
+    float: right;
+}
+.something{
+    padding-left: 10%;
+    display: inline-block;
+    font-family: 'Rock Salt', cursive;
+    padding-top: 8%;
+    font-weight: 600;
+}
+
+/* ------------------------------------ */
+
+.about-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(248, 240, 229);
+}
+
+.about-container img{
+    height: 40rem;
+    border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
+    background: url(images/imgAbout.jpg);
+    background-size: cover;
+    margin-right: -45px;
+    mix-blend-mode: multiply;
+}
+
+.about-container .content{
+    padding: 8rem;
+    background-color: gray;
+    border-radius: 30% 70% 70% 30% / 28% 30% 70% 72%;
+}
+
+.about-container .content h3{
+    font-size: 3.8rem;
+    color: white;
+}
+
+.about-container .content p{
+    font-size: 1.6rem;
+    color:white;
+    padding: 2rem;
+}
+
+.about-container .content p span{
+    color: #0d4f31;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* ------------------------------------ */
+
+.popular-container{
+    background: url(images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.popular-container .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular-container .card-container .card{
+    background: white;
+    width: 25rem;
+    height: 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popular-container .card-container .card img{
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    object-fit: cover;
+}
+
+.popular-container .card-container .card h3{
+    padding: 10% 0 0 0;
+    color: #333;
+    font-size: 40px;
+}
+
+.popular-container .card-container .card .price{
+    color: #666;
+    font-size: 2.5rem;
+}
+
+.popular-container .card-container .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
