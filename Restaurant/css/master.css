@@ -100,7 +100,7 @@ html {
 .about-container img{
     height: 40rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
-    background: url(images/imgAbout.jpg);
+    background: url(/images/imgAbout.jpg);
     background-size: cover;
     margin-right: -45px;
     mix-blend-mode: multiply;
@@ -132,9 +132,8 @@ html {
 
 /* ------------------------------------ */
 
-/* NOT WORKIN WHY ???? */
 .popular-container{
-    background: url(images/bgPopular.jpg) no-repeat;
+    background: url(/images/bgPopular.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
