@@ -1,11 +1,15 @@
 $(document).ready(function(){
-    $(this).scrollTop(0);
+    //$(this).scrollTop(0);
 
     var size = $(window).width();
+    //
+    // $('h1').css({
+    //     "font-size":"40px"
+    // });
 
-    $('h1').css({
-        "font-size":"40px"
-    });
+    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+        $(this).addClass('active');
+    })
 
     $('.nav-link').removeClass('active');
     $('.nav-link').on('click', function(){
@@ -27,6 +31,14 @@ $(document).ready(function(){
         $('.nav-tabs').css({
             "display":"none"
         });
+    });
+
+    $('.control .btn').click(function (){
+       $(this).addClass('btn-active').siblings().removeClass('btn-active');
+
+       let filter = $(this).attr('data-filter');
+       $('.menu .item').not('.'+filter).hide(200);
+       $('.menu .item').filter('.'+filter).show(400);
     });
 
     //onResize

@@ -6,12 +6,16 @@
         <style>@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');</style>
         <style>@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');</style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="css/master.css">
 
     </head>
     <body>
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
                         <!-- Navigation Bar -->
+
+                        <!-- TODO: Bottom shadow -->
         <nav class="fixed-top navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html#top-page">La maison syrienne</a>
@@ -24,16 +28,16 @@
                             <a class="nav-link" aria-current="page" href="#top-page">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">A propos</a>
+                            <a class="nav-link" aria-current="page" href="#about">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Populaires</a>
+                            <a class="nav-link" href="#popular">Populaires</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Commander</a>
+                            <a class="nav-link" href="#order">Commander</a>
                         </li>
                     </ul>
                 </div>
@@ -42,20 +46,294 @@
 
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-                    <!-- Home Page -->
-        <div class="home-container">
-            <h1 class="something">Some blabla here !!!</h1>
-            <img src="images/Home3.png" class="home-img">
+                        <!-- Home Page -->
+        <div class="home-container" id="home">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <h1 class="something" data-aos="fade-left">Mezzés, grillades, patisseries...</h1>
+            <img src="images/home2.png" class="home-img img-fluid" data-aos="zoom-in">
         </div>
 
 
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
+                        <!-- About Page-->
+        <div class="about-container" id="about">
+            <img src="images/About.jpg" class="img-fluid" data-aos="fade-left">
+            <div class="">
+                <div class="content" data-aos="fade-right">
+                    <h3>Qui sommes-nous ?</h3>
+                    <p>Ayant récemment ouvert ses portes, <br> ce restaurant se situe au coeur de la ville de Grenoble. <br>
+                        Son cuisinier ainsi que son propriétaire d’origine syrienne <br> y font découvrir une authentique
+                        cuisine faite avec amour. <br> Avec ses deux salles et sa terrasse, <span>La Maison Syrienne</span> <br> vous
+                        accueille en extérieur comme en intérieur <br> pour un voyage culinaire au Moyen Orient.</p>
+                </div>
+            </div>
+        </div>
 
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Menu Page -->
+    <section class="menu" id="menu">
+        <h1 class="title">Notre <span>Menu</span></h1>
+
+        <ul class="control">
+            <li class="btn btn-active" data-filter="assiettes">assiettes</li>
+            <li class="btn" data-filter="mezzes">mezzés</li>
+            <li class="btn" data-filter="sandwiches">sandwiches</li>
+            <li class="btn" data-filter="boissons">boissons</li>
+            <li class="btn" data-filter="desserts">desserts</li>
+        </ul>
+
+        <div class="container">
+            <div class="item assiettes">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Assiette falafel</h3>
+                        <div class="price">12,00€</div>
+                    </div>
+                    <p>Salata de falafels et houmous. 5 pièces.</p>
+                </div>
+            </div>
+            <div class="item assiettes">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Assiette végétarienne</h3>
+                        <div class="price">15,00€</div>
+                    </div>
+                    <p>Taboulé syrien au persil, falafel, houmous, moutabal,
+                        fatayer épinard, moussaka et daka rouge.</p>
+                </div>
+            </div>
+            <div class="item assiettes">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Assiette dégustation</h3>
+                        <div class="price">17,00€</div>
+                    </div>
+                    <p>Taboulé syrien au persil, kefta, samboussek, falafel,
+                        feuilleté au fromage, houmous, moutabel, safiha et feuille de vigne.</p>
+                </div>
+            </div>
+            <div class="item assiettes menu-last">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Assiette gourmande</h3>
+                        <div class="price">19,00€</div>
+                    </div>
+                    <p>Taboulé syrien au persil, kebbé, samboussek, falafel, feuilleté au fromage,
+                        houmous, moutabel, fatayer épinard, safiha et feuille de vigne.</p>
+                </div>
+            </div>
+
+            <div class="item mezzes menu-last">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Houmous</h3>
+                        <div class="price">7,50€</div>
+                    </div>
+                    <p>Purée de pois chiches, huile d'olive et crème de sésame.</p>
+                </div>
+            </div>
+
+            <div class="item sandwiches">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Sandwich falafel</h3>
+                        <div class="price">7,50€</div>
+                    </div>
+                    <p>Boulette de pois chiches, houmous, tomates, salade, cornichons et sauce à l'ail.</p>
+                </div>
+            </div>
+            <div class="item sandwiches">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Sandwich chiche taouk</h3>
+                        <div class="price">7,50€</div>
+                    </div>
+                    <p>Blanc de poulet, houmous, tomates, salade et cornichons.</p>
+                </div>
+            </div>
+            <div class="item sandwiches">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Sandwich chiche kebab</h3>
+                        <div class="price">7,50€</div>
+                    </div>
+                    <p>Viande hachée, tomates, salade et cornichons.</p>
+                </div>
+            </div>
+            <div class="item sandwiches menu-last">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Chawarma</h3>
+                        <div class="price">9,00€</div>
+                    </div>
+                    <p>Lamelles de viande de bœuf, houmous, tomates, salade et cornichons.</p>
+                </div>
+            </div>
+
+            <div class="item boissons menu-last">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Coca-Cola</h3>
+                        <div class="price">3,00€</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item desserts">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Mafrouka</h3>
+                        <div class="price">3,00€</div>
+                    </div>
+                    <p>Pistaches et amandes.</p>
+                </div>
+            </div>
+            <div class="item desserts">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Mamoul mad</h3>
+                        <div class="price">3,00€</div>
+                    </div>
+                    <p>Noix et pâte à base de semoule.</p>
+                </div>
+            </div>
+            <div class="item desserts menu-last">
+                <img src="images/popularFalafel.jpg" alt="">
+                <div class="info">
+                    <div class="first line">
+                        <h3>Baklava amande</h3>
+                        <div class="price">3,00€</div>
+                    </div>
+                    <p>Amandes et pâte feuilletée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <!-- Popular Page -->
+        <div class="popular-container" id="popular">
+            <div class="title">Nos <span>Plats</span> les plus appréciés</div>
+            <div class="card-container">
+                <div class="card" data-aos="flip-up">
+                    <img src="images/popularTacos.jpg" alt="">
+                    <h3>Mezzés de La Maison Syrienne</h3>
+                    <div class="price">22,00€</div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <img src="images/popularPide.jpg" alt="">
+                    <h3>Assiette Mezzés</h3>
+                    <div class="price">28,00€</div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <img src="images/popularFalafel.jpg" alt="">
+                    <h3>Mixte Syrien</h3>
+                    <div class="price">13,00€</div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <img src="images/mafrouka.jpg" alt="">
+                    <h3>Mafrouka</h3>
+                    <div class="price">1,50€</div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <img src="images/mabrouma.jpg" alt="">
+                    <h3>Mabrouma</h3>
+                    <div class="price">1,50€</div>
+                </div>
+            </div>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <!-- Order Page -->
+    <div class="order-container" id="order">
+        <div class="title"><span>Commandez</span> maintenant !</div>
+        <div class="content">
+            <div class="column">
+                <p><i class="fas fa-phone"></i> 09 82 47 70 56</p>
+                <p><i class="fas fa-map-marker-alt"></i> 6 rue Chénoise, 38000 Grenoble</p>
+                <p><i class="fas fa-truck"></i><a href="https://www.ubereats.com/fr/lyon/food-delivery/la-maison-syrienne/vlS36siTR1WU67slSUrrsg"> Livraison Uber Eats</a></p>
+            </div>
+            <div class="column">
+                <table class="table caption-top">
+                    <caption class="my-caption">Horaires : </caption>
+                    <thead>
+                        <tr>
+
+                            <th scope="col">Jour</th>
+                            <th scope="col">Heure</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>lundi</td>
+                            <td>11h - 21h</td>
+                        </tr>
+                        <tr>
+                            <td>mardi</td>
+                            <td>11h - 21h</td>
+                        </tr>
+                        <tr>
+                            <td>mercredi</td>
+                            <td>11h15 - 15h / 18h - 21h</td>
+                        </tr>
+                        <tr>
+                            <td>jeudi</td>
+                            <td>11h - 21h</td>
+                        </tr>
+                        <tr>
+                            <td>vendredi</td>
+                            <td>11h - 22h</td>
+                        </tr>
+                        <tr>
+                            <td>samedi</td>
+                            <td>11h - 21h</td>
+                        </tr>
+                        <tr>
+                            <td>dimanche</td>
+                            <td>fermé</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
 
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- initiliazing aos -->
+        <script>
+            $(function() {
+                AOS.init({
+                    delay: 100,
+                    duration: 1000
+                });
+            });
+        </script>
+
         <script src="JS/main.js"></script>
 
     </body>
