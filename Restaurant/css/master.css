@@ -1,5 +1,6 @@
 body {
     padding-top: 37px;
+    overflow-x: hidden;
 }
 
 html {
@@ -200,7 +201,6 @@ html {
 
 /* ------------------------------------ */
 
-/* NOT WORKIN WHY ???? */
 .popular-container{
     background: url(/images/bgPopular.jpg) no-repeat;
     background-size: cover;
@@ -267,7 +267,21 @@ html {
     margin: 2rem;
 }
 
-/* NEED TO STYLE THE UBEREATS LINK */
 .order-container p{
     color: black;
+}
+
+/* ----------------------------- */
+
+@media(max-width: 991px){
+    .home-container .one,
+    .home-container .two,
+    .home-container .three,
+    .home-container .four{
+        display: none;
+    }
+    
+    .order-container .content{
+        font-size: 160%;
+    }
 }
