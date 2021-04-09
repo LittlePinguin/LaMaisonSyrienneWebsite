@@ -32,7 +32,7 @@ $(document).ready(function(){
             "display":"none"
         });
     });
-
+    $('.menu .item').not('.assiettes').hide();
     $('.control .btn').click(function (){
        $(this).addClass('btn-active').siblings().removeClass('btn-active');
 
