@@ -1,5 +1,4 @@
 
-
 body {
     padding-top: 37px;
 }
@@ -21,11 +20,12 @@ html {
 
 
 .navbar{
-    background-color: #f8f9fa
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,.2);
 }
 
 .navbar-brand{
-    color: #337657
+    color: #337657;
 }
 
 .nav-link{
@@ -78,7 +78,7 @@ html {
     position: absolute;
     top: 15rem;
     right: 2rem;
-    background: darkcyan;
+    background: #408146;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(-45deg);
@@ -92,7 +92,7 @@ html {
     position: absolute;
     top: 15rem;
     right: -8rem;
-    background: lightblue;
+    background: #76c581;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(-45deg);
@@ -112,7 +112,7 @@ html {
     position: absolute;
     bottom: 15rem;
     right: -8rem;
-    background: darkcyan;
+    background: #408146;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(45deg);
@@ -126,7 +126,7 @@ html {
     position: absolute;
     bottom: 15rem;
     right: 2rem;
-    background: lightblue;
+    background: #76c581;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(45deg);
@@ -223,14 +223,19 @@ html {
     padding: 0.5rem 0;
     color: #333;
     cursor: pointer;
-    font-size: 2rem;
-    font-weight: bold;
-    text-transform: capitalize;
+    font-family: 'MyFont', cursive;
+    font-weight: 600;
+    font-size: 250%;
+
 }
 
-.menu ul .btn.btn-active,
+.menu ul .btn.btn-active{
+    color: #337657;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
 .menu ul .btn:hover{
-    color: white;
+    color: #337657;
 }
 
 .menu .container{
@@ -256,7 +261,7 @@ html {
     margin-right: 1rem;
 }
 
-.menu .container .item .first.line{
+.menu .container .item .first-line{
     font-size: 15px;
     display: flex;
     padding-top: 1rem;
@@ -290,6 +295,18 @@ html {
 .menu-last:before{
     border-bottom: none;
 }
+
+.menu{
+    background: url(../images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
 /* ------------------------------------ */
 
 /* NOT WORKIN WHY ???? */
@@ -368,7 +385,7 @@ html {
 .table{
     font-family: 'Pacifico', cursive;
     font-weight: 400;
-    background-color: #5c9d7f;
+    background-color: #b6e7d0;
     color : #000;
     border:solid #000;
 }
@@ -382,4 +399,11 @@ html {
 
 .about-container{
     width: 100%;
+}
+
+
+.column > p > a{
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
 }
