@@ -17,7 +17,6 @@ $(document).ready(function(){
         });
     }
 
-    console.log(detectMob());
 
 
     if(!detectMob()){
@@ -25,9 +24,11 @@ $(document).ready(function(){
         $("body").css({
             "min-width":"717px"
         });
-    }else{
 
-        console.log("here2");
+    }else{
+        $('.column > p > a').css({
+            "font-size" : "2.2em"
+        });
     }
 
 
@@ -72,8 +73,8 @@ $(document).ready(function(){
        $(this).addClass('btn-active').siblings().removeClass('btn-active');
 
        let filter = $(this).attr('data-filter');
-       $('.menu .item').not('.'+filter).hide(100);
-       $('.menu .item').filter('.'+filter).show(200);
+       $('.menu .item').not('.'+filter).fadeOut(200);
+       $('.menu .item').filter('.'+filter).fadeIn(400);
     });
 
     //onResize
