@@ -287,8 +287,8 @@ html {
   border-bottom:1px solid #858383;
 }
 
-.menu-last{
-    border-bottom: ;
+.menu-last:before{
+    border-bottom: none;
 }
 /* ------------------------------------ */
 
