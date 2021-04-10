@@ -1,6 +1,15 @@
+/* TODO: '.title' and '.btn' and 'home imgs' box-shadow : 4px 6px 9px #0000006b */
+/* mezzés and blabla text-shadow : 4px 6px 9px #0000006b */
+/* table box-shadow : box-shadow: 1px 5px 7px 2px #00000063;*/
+/* 'a' box-shadow : text-shadow: 4px 6px 9px #000000a3;*/
+
+@font-face {
+	font-family: "Pacifico";
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+
 body {
     padding-top: 37px;
-    overflow-x: hidden;
 }
 
 html {
@@ -12,6 +21,7 @@ html {
     font-family: 'Pacifico', cursive;
     text-align: center;
     padding: 100px 0 50px 0;
+    text-shadow: 4px 6px 9px #000000a3;
 }
 
 .title span{
@@ -20,11 +30,16 @@ html {
 
 
 .navbar{
-    background-color: #f8f9fa
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,.2);
 }
 
 .navbar-brand{
-    color: #337657
+    color: #337657;
+}
+
+.navbar-brand:hover{
+    color: #337657;
 }
 
 .nav-link{
@@ -68,16 +83,19 @@ html {
 }
 
 .home-container{
-    min-height: 100vh;
-    padding-top: 8%;
-    padding-bottom: 25%;
+    display: inline-block;
+    min-height: auto;
+    background: url(../images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .home-container .one{
     position: absolute;
     top: 15rem;
     right: 2rem;
-    background: darkcyan;
+    background: #408146;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(-45deg);
@@ -91,7 +109,7 @@ html {
     position: absolute;
     top: 15rem;
     right: -8rem;
-    background: lightblue;
+    background: #76c581;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(-45deg);
@@ -111,7 +129,7 @@ html {
     position: absolute;
     bottom: 15rem;
     right: -8rem;
-    background: darkcyan;
+    background: #408146;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(45deg);
@@ -125,7 +143,7 @@ html {
     position: absolute;
     bottom: 15rem;
     right: 2rem;
-    background: lightblue;
+    background: #76c581;
     border-radius: 1rem;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
     transform: rotate(45deg);
@@ -142,17 +160,25 @@ html {
 }
 
 .home-img{
-    height: 520px;;
+    width: 50%;
     /* margin: 4% 7% 8% 43%; */
     float: right;
+    padding-top: 0%;
+    padding-right: 5%;
+}
+
+@font-face {
+	font-family: "MyFont";
+	src: url('../fonts/BittersweetNF.ttf');
 }
 
 .something{
     padding-left: 10%;
     display: inline-block;
-    font-family: 'Rock Salt', cursive;
+    font-family: 'MyFont', cursive;
     padding-top: 15%;
     font-weight: 600;
+    font-size: 50px;
 }
 
 /* ------------------------------------ */
@@ -163,33 +189,37 @@ html {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(248, 240, 229);
+    background: url(../images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .about-container img{
-    height: 40rem;
+    height: 30rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
-    background: url(/images/imgAbout.jpg);
+    background: url(../images/imgAbout.jpg);
     background-size: cover;
     margin-right: -45px;
     mix-blend-mode: multiply;
 }
 
 .about-container .content{
+    height: 30rem;
     padding: 8rem;
     background-color: gray;
     border-radius: 30% 70% 70% 30% / 28% 30% 70% 72%;
 }
 
 .about-container .content h3{
-    font-size: 3.8rem;
+    font-size: 3rem;
     color: white;
 }
 
 .about-container .content p{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color:white;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .about-container .content p span{
@@ -198,11 +228,113 @@ html {
     font-style: italic;
 }
 
+/*------------------------------------- */
+.menu{
+    background-color: #dedede   ;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.menu ul .btn{
+    margin: 1rem 2rem;
+    padding: 0.5rem 0;
+    color: #333;
+    cursor: pointer;
+    font-family: 'MyFont', cursive;
+    font-weight: 600;
+    font-size: 250%;
+
+}
+
+.menu ul .btn.btn-active{
+    color: #337657;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.menu ul .btn:hover{
+    color: #337657;
+}
+
+.menu .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.menu .container .item{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.menu .container .item img{
+    height: 5rem;
+    width: 10%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.menu .container .item .first-line{
+    font-size: 15px;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu .container .item .price{
+    padding-left: 10rem;
+}
+
+.menu .container .item p{
+    font-size: 15px;
+    font-style: italic;
+}
+.item {
+  position: relative;
+  z-index : 1;
+
+}
+
+.item:before {
+  content : "";
+  position: absolute;
+  left    : 12%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 76%;  /* or 100px */
+  border-bottom:1px solid #858383;
+}
+
+.menu-last:before{
+    border-bottom: none;
+}
+
+.menu{
+    background: url(../images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
 
 /* ------------------------------------ */
 
+/* NOT WORKIN WHY ???? */
 .popular-container{
-    background: url(/images/bgPopular.jpg) no-repeat;
+    background: url(../images/bgPopular.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -253,7 +385,10 @@ html {
 /* ------------------------------------ */
 
 .order-container{
-    background-color: darkgrey;
+    background: url(../images/bgPopular.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .order-container .content{
@@ -267,21 +402,40 @@ html {
     margin: 2rem;
 }
 
+/* NEED TO STYLE THE UBEREATS LINK */
 .order-container p{
     color: black;
 }
 
-/* ----------------------------- */
 
-@media(max-width: 991px){
-    .home-container .one,
-    .home-container .two,
-    .home-container .three,
-    .home-container .four{
-        display: none;
-    }
-    
-    .order-container .content{
-        font-size: 160%;
-    }
+.table{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    background-color: #b6e7d0;
+    color : #000;
+    border:solid #000;
+}
+
+.my-caption{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 120%;
+    color : #000;
+    text-shadow: 4px 6px 9px #000000a3;
+}
+
+.about-container{
+    width: 100%;
+}
+
+
+.column > p > a{
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
+    text-shadow: 4px 6px 9px #000000a3;
+}
+.column > p > a:hover{
+    text-decoration: underline;
+
 }
