@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    //$(this).scrollTop(0);
 
     function detectMob() {
         const toMatch = [
@@ -22,10 +21,11 @@ $(document).ready(function(){
     if(!detectMob()){
         console.log("here");
         $("body").css({
-            "min-width":"717px"
+            "min-width":"990px"
         });
 
     }else{
+        document.getElementById('MyStyle').setAttribute('href', 'css/PhoneSheet.css');
         $('.column > p > a').css({
             "font-size" : "2.2em"
         });
@@ -35,22 +35,6 @@ $(document).ready(function(){
     var size = $(window).width();
 
 
-    //
-    // $('h1').css({
-    //     "font-size":"40px"
-    // });
-
-    // $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-    //     $(this).addClass('active');
-    // })
-
-    $('.nav-link').removeClass('active');
-    $('.nav-link').on('click', function(){
-        $('.nav-link').each(function(){
-            $(this).removeClass('active');
-        });
-        $(this).addClass('active');
-    });
 
     $('.navbar-toggler').focus(function(){
         $('.nav-tabs').removeClass("tab-btm");
@@ -80,15 +64,33 @@ $(document).ready(function(){
     //onResize
     $(window).resize(function(){
         w_w = $(window).width();
-        if(w_w > 991){
+        if(w_w > 990){
             $(".nav-tabs").css({
                 "display":"flex"
             });
         }
-        if(w_w < 992){
-            $(".nav-tabs").css({
-                "display":"none"
-            });
-        }
     });
+    if(window.scrollY==0){
+
+    }
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        $(".navbar").css({
+            "top":"0"
+        });
+      } else {
+          // $('.scroll-top-icon').css({
+          //    "display":"inline-block"
+          // });
+        $('.scroll-top-icon').fadeIn(200);
+        $(".navbar").css({
+            "top":"-100px"
+        });
+      }
+      prevScrollpos = currentScrollPos;
+    }
+
+
 });
