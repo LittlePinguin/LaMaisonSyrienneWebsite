@@ -70,9 +70,17 @@ $(document).ready(function(){
             });
         }
     });
-    if(window.scrollY==0){
 
-    }
+    $(window).on("scroll", function() {
+        var scrollPos = $(window).scrollTop();
+        if (scrollPos <= 0) {
+            $(".scroll-top-icon").fadeOut();
+        } else {
+            $(".scroll-top-icon").fadeIn();
+        }
+    });
+
+
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
@@ -81,10 +89,6 @@ $(document).ready(function(){
             "top":"0"
         });
       } else {
-          // $('.scroll-top-icon').css({
-          //    "display":"inline-block"
-          // });
-        $('.scroll-top-icon').fadeIn(200);
         $(".navbar").css({
             "top":"-100px"
         });
