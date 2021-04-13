@@ -1,0 +1,495 @@
+/* TODO: '.title' and '.btn' and 'home imgs' box-shadow : 4px 6px 9px #0000006b */
+/* mezzés and blabla text-shadow : 4px 6px 9px #0000006b */
+/* table box-shadow : box-shadow: 1px 5px 7px 2px #00000063;*/
+/* 'a' box-shadow : text-shadow: 4px 6px 9px #000000a3;*/
+
+@font-face {
+	font-family: "Pacifico";
+	src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+body {
+    /* padding-top: 37px; */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 75px; */
+}
+
+.title{
+    font-size: 55px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding: 100px 0 50px 0;
+    text-shadow: 4px 6px 9px #000000a3;
+}
+
+.title span{
+    color: #337657;
+}
+
+
+.navbar{
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 20px -2px rgba(0,0,0,.2);
+	height: 7%;
+	font-size: 23px;
+}
+
+
+.navbar-brand, .navbar-brand:hover, .nav-link{
+    color: #337657;
+}
+
+.nav-tabs > li > a:hover {
+    color: #0d4f31;
+    background-color: #edeff0;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: #4c8f4a;
+    border-bottom: 1px solid #4c8f4a;
+    color: #fff;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(157, 157, 157, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgba(157, 157, 157, 0.5);
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 180%
+}
+
+.tab-btm{
+    bottom: 0;
+}
+
+.nav-tabs{
+    position: absolute;
+}
+
+.nav-tabs .nav-link {
+    font-size: 125%;
+}
+
+.home-container{
+    display: inline-block;
+	width: 100%;
+    min-height: auto;
+    background: url(../images/HomeBg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	box-shadow: inset 0px -5px 10px 0px #000000d6;
+	height: 100vh;
+}
+
+.home-img{
+	margin-top: 15%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+@font-face {
+	font-family: "MyFont";
+	src: url('../fonts/BittersweetNF.ttf');
+}
+
+.random-container{
+	height: 100vh;
+	display: inline-block;
+	float: right;
+	width: 100%;
+	padding-top: 20%;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home-txt{
+	margin-left: 12%;
+}
+
+.home-text1{
+    /* margin-left: 12%; */
+    display: inline-block;
+    /* font-family: 'MyFont', cursive; */
+    /* padding-top: 15%; */
+	/* font-weight: 600; */
+    font-weight: 600;
+    font-size: 70px;
+	margin-bottom: 5%;
+}
+
+.home-text2{
+	/* margin-left: 12%; */
+	margin-bottom: 10%;
+	font-size: 33px;
+	font-weight: 300;
+	/* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.btn-container{
+	font-size: 1.6em;
+	margin-left: 13%;
+}
+
+.cmd-btn{
+	display: inline-block;
+	width: 35%;
+    height: 100px;
+	color: white;
+    background-color: #135419;
+    text-align-last: center;
+    padding-top: 3%;
+    border: 2px solid white;
+	margin-right:1%;
+}
+.menu-btn{
+	display: inline-block;
+	width: 35%;
+    height: 100px;
+	color: #0e432a;
+    background-color: #d8d8d8;
+    text-align-last: center;
+    padding-top: 3%;
+    border: 2px solid #0e432a;
+}
+
+.sqipple {
+	border: 0 solid;
+	box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+	outline-offset: 0px;
+	outline: 1px solid;
+	/* outline-color: #595959; */
+	text-shadow: none;
+	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sqipple:hover {
+	border: 1px solid;
+	outline-color: #198754;
+	outline-offset: 0.2em;
+}
+
+.sqipple2:hover{
+	outline-color: #d8d8d8;
+}
+
+.hvr-bounce-to-bottom {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #4dd4ac;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+	color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+
+.shrink {
+	transition: all .2s ease-in-out;
+}
+.shrink:hover, .shrink:focus, .shrink:active {
+	-webkit-transform: scale(0.95);
+	transform: scale(0.95);
+}
+/* ------------------------------------ */
+
+.about-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: url(../images/Bg4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	box-shadow: inset 0px -5px 10px 0px #000000d6;
+}
+
+.about-container img{
+    height: 30rem;
+    border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
+    background: url(../images/imgAbout.jpg);
+    background-size: cover;
+    margin-right: -45px;
+    /* mix-blend-mode: multiply; */
+}
+
+
+.about-container .content{
+    height: 30rem;
+    padding: 8rem;
+    background-color: gray;
+    border-radius: 30% 70% 70% 30% / 28% 30% 70% 72%;
+}
+
+.about-container .content h3{
+    font-size: 3rem;
+    color: white;
+}
+
+.about-container .content p{
+    font-size: 1.2rem;
+    color:white;
+    padding: 1rem;
+}
+
+.about-container .content p span{
+    color: #0d4f31;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*------------------------------------- */
+.menu{
+    background-color: #dedede   ;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.menu ul .btn{
+    margin: 1rem 2rem;
+    padding: 0.5rem 0;
+    color: #333;
+    cursor: pointer;
+    font-family: 'MyFont', cursive;
+    font-weight: 600;
+    font-size: 250%;
+
+}
+
+.menu ul .btn.btn-active{
+    color: #337657;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+.menu ul .btn:hover{
+    color: #337657;
+}
+
+.menu .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.menu .container .item{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.menu .container .item img{
+    height: 5rem;
+    width: 10%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.menu .container .item .first-line{
+    font-size: 15px;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu .container .item .price{
+    padding-left: 10rem;
+}
+
+.menu .container .item p{
+    font-size: 15px;
+    font-style: italic;
+}
+.item {
+  position: relative;
+  z-index : 1;
+
+}
+
+.item:before {
+  content : "";
+  position: absolute;
+  left    : 12%;
+  bottom  : 0;
+  height  : 1px;
+  width   : 76%;  /* or 100px */
+  border-bottom:1px solid #858383;
+}
+
+.menu-last:before{
+    border-bottom: none;
+}
+
+.menu{
+    background: url(../images/Bg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	box-shadow: inset 0px -5px 10px 0px #000000d6;
+}
+
+
+
+
+
+/* ------------------------------------ */
+
+/* NOT WORKIN WHY ???? */
+.popular-container{
+    background: url(../images/Bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	box-shadow: inset 0px -5px 10px 0px #000000d6;
+}
+
+.popular-container .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular-container .card-container .card{
+    background: white;
+    width: 25rem;
+    height: 30rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.popular-container .card-container .card img{
+    height: 15rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    /* clip-path: 0 0, 100% 0, 100% 85%, 0 100%; */
+    object-fit: cover;
+}
+
+.popular-container .card-container .card h3{
+    padding: 10% 0 0 0;
+    color: #333;
+    font-size: 40px;
+}
+
+.popular-container .card-container .card .price{
+    color: #666;
+    font-size: 2.5rem;
+}
+
+.popular-container .card-container .card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------ */
+
+.order-container{
+    background: url(../images/Bg4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.order-container .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-container .column{
+    margin: 2rem;
+}
+
+/* NEED TO STYLE THE UBEREATS LINK */
+.order-container p{
+    color: black;
+}
+
+
+.table{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    background-color: #b6e7d0;
+    color : #000;
+    border:solid #000;
+}
+
+.my-caption{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: 120%;
+    color : #000;
+    text-shadow: 4px 6px 9px #000000a3;
+}
+
+.about-container{
+    width: 100%;
+}
+
+
+.column > p > a{
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
+    text-shadow: 4px 6px 9px #000000a3;
+}
+.column > p > a:hover{
+    text-decoration: underline;
+
+}
