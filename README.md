@@ -1,5 +1,5 @@
 # LaMaisonSyrienneWebsite
 
-TODO version pc: 
-      - menu design
+TODO version pc: <br />
+      - menu design <br />
       - home buttons design
