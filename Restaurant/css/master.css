@@ -652,14 +652,16 @@ table tr:nth-child(even){
 }
 
 @media(max-width: 991px){
-    .popular-container .card-container{
-        margin-top: 100px;
-        max-height: 300px;
-        margin-right: 15px;
-        margin-left: 15px;
+     .popular-container .card-container{
+	max-height: 300px;
+        margin-top: 200px;
+        margin-right: 25px;
         display: flex;
         overflow-x: scroll;
+        overflow-y: hidden;
         flex-wrap: nowrap;
+        align-items: center;
+        justify-content: normal;
     }
 
     .popular-container .card-container .card{
