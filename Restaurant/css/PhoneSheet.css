@@ -1,28 +1,50 @@
-/* TODO: '.title' and '.btn' and 'home imgs' box-shadow : 4px 6px 9px #0000006b */
-/* mezzés and blabla text-shadow : 4px 6px 9px #0000006b */
-/* table box-shadow : box-shadow: 1px 5px 7px 2px #00000063;*/
-/* 'a' box-shadow : text-shadow: 4px 6px 9px #000000a3;*/
+
 
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
 }
 
-body {
-    /* padding-top: 37px; */
-}
+
 
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 75px; */
+}
+
+.menu-blur{
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2.5px);
 }
 
 .title{
     font-size: 55px;
     font-family: 'Pacifico', cursive;
     text-align: center;
-    padding: 100px 0 50px 0;
     text-shadow: 4px 6px 9px #000000a3;
+	color: #fff;
+	margin-bottom: 0;
+
+
+}
+
+.control{
+    padding-top: 0;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+nav.navbar{
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+nav.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+}
+
+nav.navbar.transparent {
+  background-color:rgba(0,0,0,0);
 }
 
 .title span{
@@ -31,26 +53,27 @@ html {
 
 
 .navbar{
-    background-color: #f8f9fa;
+    background-color: #151f28;
     box-shadow: 0px 4px 20px -2px rgba(0,0,0,.2);
 	height: 7%;
 	font-size: 23px;
 }
 
-
+.nav-item{
+	font-size: 220%;
+}
 .navbar-brand, .navbar-brand:hover, .nav-link{
-    color: #337657;
+    color: #fff;
 }
 
 .nav-tabs > li > a:hover {
-    color: #0d4f31;
-    background-color: #edeff0;
+    color: #151f28;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-    background-color: #4c8f4a;
-    border-bottom: 1px solid #4c8f4a;
-    color: #fff;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    color: #151f28;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -66,6 +89,7 @@ html {
     font-size: 180%
 }
 
+
 .tab-btm{
     bottom: 0;
 }
@@ -79,7 +103,7 @@ html {
 }
 
 .home-container{
-    display: inline-block;
+	display: inline-block;
 	width: 100%;
     min-height: auto;
     background: url(../images/HomeBg.png) no-repeat;
@@ -113,6 +137,15 @@ html {
 
 .home-txt{
 	margin-left: 12%;
+    font-family: 'Pacifico', cursive;
+}
+
+.home-txt h1{
+	font-size: 500%;
+}
+
+.home-txt h4{
+	font-size: 300%;
 }
 
 .home-text1{
@@ -120,44 +153,45 @@ html {
     display: inline-block;
     /* font-family: 'MyFont', cursive; */
     /* padding-top: 15%; */
-	/* font-weight: 600; */
     font-weight: 600;
-    font-size: 70px;
+    font-size: 60px;
 	margin-bottom: 5%;
 }
 
 .home-text2{
 	/* margin-left: 12%; */
 	margin-bottom: 10%;
-	font-size: 33px;
-	font-weight: 300;
 	/* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 .btn-container{
-	font-size: 1.6em;
-	margin-left: 13%;
+	display: initial;
+	font-weight: 600;
+	font-size: 1.05em;
+	margin-left: 14%;
 }
 
 .cmd-btn{
 	display: inline-block;
 	width: 35%;
-    height: 100px;
+	height: 4vh;
+	font-size: 150%;
 	color: white;
     background-color: #135419;
     text-align-last: center;
-    padding-top: 3%;
+    padding-top: 1.5%;
     border: 2px solid white;
 	margin-right:1%;
 }
 .menu-btn{
 	display: inline-block;
 	width: 35%;
-    height: 100px;
+	height: 4vh;
+	font-size: 150%;
 	color: #0e432a;
     background-color: #d8d8d8;
     text-align-last: center;
-    padding-top: 3%;
+    padding-top: 1.5%;
     border: 2px solid #0e432a;
 }
 
@@ -190,8 +224,8 @@ html {
 	position: relative;
 	-webkit-transition-property: color;
 	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 .hvr-bounce-to-bottom:before {
 	content: "";
@@ -201,14 +235,14 @@ html {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #4dd4ac;
+	background: white;
 	-webkit-transform: scaleY(0);
 	transform: scaleY(0);
 	-webkit-transform-origin: 50% 0;
 	transform-origin: 50% 0;
 	-webkit-transition-property: transform;
 	transition-property: transform;
-	-webkit-transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.5s;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
@@ -231,15 +265,17 @@ html {
 	-webkit-transform: scale(0.95);
 	transform: scale(0.95);
 }
+
 /* ------------------------------------ */
 
 .about-container{
+	width: 100%;
     min-height: 100vh;
-    display: flex;
+	display: inline-flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: url(../images/Bg4.jpg) no-repeat;
+	background: url(../images/Bg6.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -247,18 +283,15 @@ html {
 }
 
 .about-container img{
-    height: 30rem;
+	height: 40rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
     background: url(../images/imgAbout.jpg);
     background-size: cover;
-    margin-right: -45px;
-    /* mix-blend-mode: multiply; */
 }
 
-
 .about-container .content{
-    height: 30rem;
-    padding: 8rem;
+	height: 50vh;
+    padding: 5rem;
     background-color: gray;
     border-radius: 30% 70% 70% 30% / 28% 30% 70% 72%;
 }
@@ -266,12 +299,14 @@ html {
 .about-container .content h3{
     font-size: 3rem;
     color: white;
+	font-size: 500%;
 }
 
 .about-container .content p{
     font-size: 1.2rem;
     color:white;
     padding: 1rem;
+	font-size: 200%;
 }
 
 .about-container .content p span{
@@ -281,8 +316,14 @@ html {
 }
 
 /*------------------------------------- */
+
 .menu{
-    background-color: #dedede   ;
+	background: url(../images/Bg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+	padding-top: 2%;
+    min-height: 100vh;
 }
 
 .menu ul{
@@ -300,17 +341,18 @@ html {
     cursor: pointer;
     font-family: 'MyFont', cursive;
     font-weight: 600;
-    font-size: 250%;
-
+    font-size: 300%;
+	color: white;
+	transition: all 300ms;
 }
 
 .menu ul .btn.btn-active{
-    color: #337657;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+	font-size: 400%;
 }
+
 .menu ul .btn:hover{
-    color: #337657;
+    font-size: 400%;
 }
 
 .menu .container{
@@ -319,25 +361,27 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 2rem;
+	max-width: 90vw;
 }
 
 .menu .container .item{
     width: 100%;
-    padding: 2rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 5rem;
     display: flex;
     background-color: #fff;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .menu .container .item img{
-    height: 5rem;
-    width: 10%;
+	width: 15rem;
     object-fit: cover;
     margin-right: 1rem;
 }
 
 .menu .container .item .first-line{
-    font-size: 15px;
+    font-size: 40px;
     display: flex;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
@@ -346,9 +390,12 @@ html {
 .menu .container .item .price{
     padding-left: 10rem;
 }
-
+.menu .container .item h3{
+    font-size: 110%;
+    font-style: italic;
+}
 .menu .container .item p{
-    font-size: 15px;
+    font-size: 30px;
     font-style: italic;
 }
 .item {
@@ -372,102 +419,227 @@ html {
 }
 
 .menu{
-    background: url(../images/Bg3.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #fec ;
 	box-shadow: inset 0px -5px 10px 0px #000000d6;
 }
-
-
-
+.menu-blur h1{
+	font-size: 360%;
+}
 
 
 /* ------------------------------------ */
 
-/* NOT WORKIN WHY ???? */
 .popular-container{
-    background: url(../images/Bg1.jpg) no-repeat;
+    min-height: 100vh;
+	padding-top: 2%;
+	background: url(../images/Bg5.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 	box-shadow: inset 0px -5px 10px 0px #000000d6;
 }
 
+.popular-container .title{
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2.5px);
+	font-size: 360%;
+}
+
 .popular-container .card-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+   max-height: 300px;
+   margin-top: 200px;
+   margin-right: 25px;
+   display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: normal;
 }
 
 .popular-container .card-container .card{
+    width: 250px;
+    height: 300px;
     background: white;
-    width: 25rem;
-    height: 30rem;
-    padding: 2rem;
     margin: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
-    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-out;
+	min-width: 250px;
 }
 
-.popular-container .card-container .card img{
-    height: 15rem;
+
+.popular-container .card-container .card .content img{
     width: 100%;
-    border-radius: 0.4rem;
-    /* clip-path: 0 0, 100% 0, 100% 85%, 0 100%; */
+    height: 150px;
     object-fit: cover;
+    display: block;
+    transition: all 0.3s ease-out;
 }
 
-.popular-container .card-container .card h3{
+.popular-container .card-container .card .content h3{
+    text-align: center;
     padding: 10% 0 0 0;
     color: #333;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .popular-container .card-container .card .price{
+    text-align: center;
     color: #666;
-    font-size: 2.5rem;
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
-.popular-container .card-container .card:hover{
-    transform: scale(1.02);
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+.popular-container .card-container .details{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(4, 38, 68) 10%, #000 100%);
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    transform: translateY(-200px);
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+
+.popular-container .card-container .details h3{
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out;
+}
+
+.popular-container .card-container .details p{
+    font-size: 15px;
+    transform: translateY(30px);
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.popular-container .card-container .card:hover .details{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.popular-container .card-container .card:hover .details h3{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.popular-container .card-container .card:hover .details p{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 /* ------------------------------------ */
 
 .order-container{
-    background: url(../images/Bg4.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: #151f28 ;
     background-attachment: fixed;
+    padding-top: 2%;
+}
+
+.order-container .title{
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .order-container .content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
-.order-container .column{
-    margin: 2rem;
+.order-container .content .cadre{
+	display: flex;
+	    /* justify-content: center; */
+	    margin-left: 15vw;
+	    width: 70%;
+	    margin-top: 1rem;
+	    margin-bottom: 1rem;
+	    border-radius: 3rem;
+	    border: 5px solid #08141d;
+	    box-shadow: -1px -1px 3px rgba(131, 131, 131, 0.5), 1px 1px 3px
+			rgba(70, 70, 70, 0.12), inset -1px -1px 3px
+			rgba(131, 131, 131, 0.5), inset 1px 1px 3px
+			rgba(70, 70, 70, 0.12);
 }
 
-/* NEED TO STYLE THE UBEREATS LINK */
-.order-container p{
-    color: black;
+iframe{
+	width: 70vw;
+	border-radius: 3rem;
 }
 
 
-.table{
+.order-container .column h3{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.order-container .column .map{
+    margin-top:5%;
+	margin-left: 15vw;
+}
+
+.order-container .column table{
+    margin-right: 8rem;
+}
+
+.order-container .column .info{
+    margin-top: 50%;
+}
+
+.order-container .column .info p{
+    margin-bottom: 2rem;
+}
+
+.order-container .column p{
+    color:white;
+}
+
+.order-container .column .reseaux p i{
+    margin-right: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.order-container .column .reseaux p i:hover{
+    color: rgb(116, 197, 116);
+}
+
+table{
     font-family: 'Pacifico', cursive;
     font-weight: 400;
-    background-color: #b6e7d0;
-    color : #000;
-    border:solid #000;
+    background-color: white;
+    color : black;
+    border-collapse: collapse;
+    border-radius: 0.4rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+}
+
+table thead{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+table th{
+    padding: 1rem 2rem;
+}
+
+table td{
+    padding: 0.5rem 2rem;
+}
+
+table td span{
+    color: red;
+}
+
+table tr:nth-child(even){
+    background-color: rgb(223, 247, 223);
 }
 
 .my-caption{
@@ -478,18 +650,35 @@ html {
     text-shadow: 4px 6px 9px #000000a3;
 }
 
-.about-container{
-    width: 100%;
-}
-
-
-.column > p > a{
+.column .info > p > a{
     text-decoration: none;
-    color: green;
+    color: rgb(116, 197, 116);
     font-weight: 600;
     text-shadow: 4px 6px 9px #000000a3;
 }
-.column > p > a:hover{
-    text-decoration: underline;
 
+.column .info > p > a:hover{
+    text-decoration: underline;
+}
+
+.scroll-btn .scroll-top-icon{
+    position: fixed;
+	display: none;
+    height: 70px;
+    width: 70px;
+    padding-left: 3px;
+    color:white;
+    background-color: rgb(47, 194, 47);
+    border: 3px solid white;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.692);
+	bottom: 3%;
+	right: 3%;
+	z-index: 99;
+}
+
+.scroll-btn .scroll-top-icon:hover{
+    color: rgb(47, 194, 47);
+    border: 3px solid rgb(47, 194, 47);
+    background-color: transparent;
 }
