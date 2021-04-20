@@ -752,26 +752,25 @@ table tr:nth-child(even){
     }
 
     .popular-container .card-container{
-        margin-top: 200px;
-        max-height: 900px;
+        margin-top: 50%;
+        max-height: 600px;
         margin-right: 25px;
         display: flex;
         overflow-x: scroll;
-        overflow-y: hidden;
+        /*overflow-y: hidden;*/
         flex-wrap: nowrap;
         align-items: center;
         justify-content: normal;
     }
 
-
     .popular-container .card-container .card{
-        min-width: 95%;
-        height: 900px;
+        min-width: 500px;
+        height: 600px;
         border-radius: 1rem;
     }
 
     .popular-container .card-container .card .content img{
-        height: 550px;
+        height: 300px;
     }
 
     .popular-container .card-container .card .content h3{
@@ -783,12 +782,12 @@ table tr:nth-child(even){
     }
 
     .popular-container .card-container .details h3{
-        font-size: 55px;
-        margin-top: 9rem;
+        font-size: 50px;
+        margin-top: 3rem;
     }
 
     .popular-container .card-container .details p{
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .order-container .content .cadre{
