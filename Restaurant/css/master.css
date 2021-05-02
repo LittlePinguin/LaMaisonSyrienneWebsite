@@ -764,6 +764,15 @@ table tr:nth-child(even){
 .carousel-item img{
 	border-radius: 7%;
 }
+
+.carousel-item h1{
+    font-size: 45px;
+}
+
+.carousel-item p{
+    font-size: 35px;
+}
+
 .carousel-container{
 	display: none;
 }
