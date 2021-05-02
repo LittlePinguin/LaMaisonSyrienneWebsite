@@ -7,41 +7,38 @@ $(document).ready(function(){
         });
     });
 
-    function detectMob() {
-        const toMatch = [
-            /Android/i,
-            /webOS/i,
-            /iPhone/i,
-            /iPad/i,
-            /iPod/i,
-            /BlackBerry/i,
-            /Windows Phone/i
-        ];
-
-        return toMatch.some((toMatchItem) => {
-            return navigator.userAgent.match(toMatchItem);
-        });
-    }
-
-
-
-    if(!detectMob()){
-        console.log("here");
-        $("body").css({
-            "min-width":"990px"
-        });
-
-    }else{
-        document.getElementById('MyStyle').setAttribute('href', 'css/PhoneSheet.css');
-        $('.column > p > a').css({
-            "font-size" : "2.2em"
-        });
-    }
+    // function detectMob() {
+    //     const toMatch = [
+    //         /Android/i,
+    //         /webOS/i,
+    //         /iPhone/i,
+    //         /iPad/i,
+    //         /iPod/i,
+    //         /BlackBerry/i,
+    //         /Windows Phone/i
+    //     ];
+    //
+    //     return toMatch.some((toMatchItem) => {
+    //         return navigator.userAgent.match(toMatchItem);
+    //     });
+    // }
+    //
+    //
+    // if(!detectMob()){
+    //     $('.popular-container').removeClass("hidden");
+    // }else{
+    //     $('.carousel-container').removeClass("hidden");
+    // }
 
 
-    var size = $(window).width();
-
-
+    //
+    // var size = $(window).width();
+    //
+    // if(size > 991){
+    //     $('.popular-container').removeClass("hidden");
+    // }else{
+    //     $('.carousel-container').removeClass("hidden");
+    // }
 
     $('.navbar-toggler').focus(function(){
         $('.nav-tabs').removeClass("tab-btm");
@@ -58,13 +55,13 @@ $(document).ready(function(){
     });
 
     // menu onglets handler
-    $('.menu .item').not('.assiettes').hide();
+    $('.menu .item').not('.mezzes').hide();
 
     $('.control .btn').click(function (){
         var filter = $(this).attr('data-filter');
 
         $(this).addClass('btn-active').siblings().removeClass('btn-active');
-        
+
         $('.menu .item').not('.'+filter).fadeOut(200);
         $('.menu .item').filter('.'+filter).fadeIn(400);
 
@@ -146,34 +143,6 @@ $(document).ready(function(){
                 });
             });
 
-            /*$('.hvr-bounce-to-bottom').on('touchstart', function(){
-                $(this).css({
-                    "color": "white"
-                });
-            });
-            $('.hvr-bounce-to-bottom').on('touchend', function(){
-                $(this).css({
-                    "color": "transparent"
-                });
-            });
-            
-            $('.hvr-bounce-to-bottom:before').on('touchstart', function(){
-                $(this).css({
-                    "-webkit-transform": "scaleY(1)",
-                    "transform": "scaleY(1)",
-                    "-webkit-transition-timing-function": "cubic-bezier(0.52, 1.64, 0.37, 0.66)",
-                    "transition-timing-function": "cubic-bezier(0.52, 1.64, 0.37, 0.66)"
-                });
-            });
-            $('.hvr-bounce-to-bottom:before').on('touchend', function(){
-                $(this).css({
-                    "-webkit-transform": "scaleY(0)",
-                    "transform": "scaleY(0)",
-                    "-webkit-transition-timing-function": "ease-out",
-                    "transition-timing-function": "ease-out"
-                });
-            });*/
-            
             $('.order-container .column .reseaux p i').on('touchstart', function(){
                 $(this).css({
                     "color": "rgb(116, 197, 116)"
@@ -184,7 +153,7 @@ $(document).ready(function(){
                     "color":"white"
                 });
             });
-            
+
             $('.column .info p a').on('touchstart', function(){
                 $(this).css({
                     "text-decoration": "underline"
@@ -195,15 +164,6 @@ $(document).ready(function(){
                     "text-decoration": "none"
                 });
             });
-            // popular
-            /*$('.card-container').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                infinite: false,
-                arrows: true,
-                mobileFirst: true,
-            });   */
         }
     });
 
@@ -227,7 +187,7 @@ $(document).ready(function(){
         });
       } else {
         $(".navbar").css({
-            "top":"-100px"
+            "top":"-200px"
         });
       }
       prevScrollpos = currentScrollPos;
