@@ -66,6 +66,7 @@ nav.navbar.transparent {
 
 .nav-tabs > li > a:hover {
     color: #151f28;
+	background-color: white;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -205,49 +206,49 @@ nav.navbar.transparent {
 .sqipple2:hover{
 	outline-color: #d8d8d8;
 }
-
-.hvr-bounce-to-bottom {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px transparent;
-	position: relative;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
+@media(min-width: 992px){
+	.hvr-bounce-to-bottom {
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px transparent;
+		position: relative;
+		-webkit-transition-property: color;
+		transition-property: color;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+	}
+	.hvr-bounce-to-bottom:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: white;
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		-webkit-transform-origin: 50% 0;
+		transform-origin: 50% 0;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.5s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+		color: white;
+	}
+	.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	}
 }
-.hvr-bounce-to-bottom:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: white;
-	-webkit-transform: scaleY(0);
-	transform: scaleY(0);
-	-webkit-transform-origin: 50% 0;
-	transform-origin: 50% 0;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
-	color: white;
-}
-.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
-	-webkit-transform: scaleY(1);
-	transform: scaleY(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-
 
 .shrink {
 	transition: all .2s ease-in-out;
@@ -287,6 +288,7 @@ nav.navbar.transparent {
 .about-container .content{
     height: 30rem;
     padding: 5rem;
+    margin-left: -25px;
     background-color: gray;
     border-radius: 30% 70% 70% 30% / 28% 30% 70% 72%;
 }
@@ -311,7 +313,7 @@ nav.navbar.transparent {
 /*------------------------------------- */
 
 .menu{
-	background: url(../images/Bg3.jpg) no-repeat;
+	background: url(../images/top-view-food-frame-with-copy-space.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -361,6 +363,7 @@ nav.navbar.transparent {
     padding: 2rem;
     display: flex;
     background-color: #fff;
+    opacity: 0.9;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
@@ -416,7 +419,7 @@ nav.navbar.transparent {
 .popular-container{
     min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/Bg5.jpg) no-repeat;
+	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -743,25 +746,43 @@ table tr:nth-child(even){
 .carousel-container{
 	min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/Bg5.jpg) no-repeat;
+	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	box-shadow: inset 0px -5px 10px 0px #000000d6;
-	padding-left: 10%;
 }
+
+.carousel-container .title{
+	margin-top: 5vh;
+    padding: 2%;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2.5px);
+}
+
 .carousel-case{
-	width: 90%;
-	padding-top:20vh;
+	padding: 5%;
+    margin-top: 10vh;
+    background: #36312d;
+    border-radius: 5%;
+    margin-right: 10%;
+	margin-left: 10%;
+    box-shadow: 5px 4px 20px 6px #000000b0;
 }
 
 .hidden{
 	display: none;
 }
 
-.carousel-item img{
-	border-radius: 7%;
+
+.carousel-item h1{
+    font-size: 45px;
 }
+
+.carousel-item p{
+    font-size: 35px;
+}
+
 .carousel-container{
 	display: none;
 }
@@ -771,7 +792,7 @@ table tr:nth-child(even){
 .carousel-caption{
 	background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2.5px);
-		
+
 }
 
 @media(max-width: 991px){
@@ -832,6 +853,7 @@ table tr:nth-child(even){
 
     .about-container .content{
         height: 45vh;
+        margin-left: 0;
     }
 
     .about-container .content h3{
