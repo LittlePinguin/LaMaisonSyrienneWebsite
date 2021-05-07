@@ -112,9 +112,12 @@ nav.navbar.transparent {
 	box-shadow: inset 0px -5px 10px 0px #000000d6;
 }
 
-.home-img{
-	margin-top: 1%;
+.home-image{
     width: 45%;
+}
+
+.home-img{
+	margin-top: 10%;
     /* margin: 4% 7% 8% 43%; */
     /* float: left; */
     padding-top: 0%;
@@ -128,8 +131,11 @@ nav.navbar.transparent {
 
 .random-container{
 	height: 100vh;
-	display: inline-block;
-	float: right;
+    position: absolute;
+	display: flow-root;
+	/*float: right;*/
+    bottom: 0;
+    right: 0;
 	width: 50%;
 	padding-top: 20%;
 	background-color: black;
@@ -279,13 +285,14 @@ nav.navbar.transparent {
 .about-container img{
     height: 30rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
-    background: url(../images/imgAbout.jpg);
+    background: url(../images/About.jpg);
     background-size: cover;
     margin-right: -45px;
 }
 
 .about-container .content{
     height: 30rem;
+    width: 50%;
     padding: 5rem;
     margin-left: -25px;
     background-color: gray;
@@ -381,7 +388,7 @@ nav.navbar.transparent {
 }
 
 .menu .container .item .price{
-    padding-left: 10rem;
+    /*padding-left: 10rem;*/
 }
 
 .menu .container .item p{
@@ -750,20 +757,29 @@ table tr:nth-child(even){
 	background-position: center;
 	background-attachment: fixed;
 	box-shadow: inset 0px -5px 10px 0px #000000d6;
-	padding-left: 10%;
 }
+
+.carousel-container .title{
+	margin-top: 5vh;
+    padding: 2%;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(2.5px);
+}
+
 .carousel-case{
-	width: 90%;
-	padding-top:20vh;
+	padding: 5%;
+    margin-top: 10vh;
+    background: #36312d;
+    border-radius: 5%;
+    margin-right: 10%;
+	margin-left: 10%;
+    box-shadow: 5px 4px 20px 6px #000000b0;
 }
 
 .hidden{
 	display: none;
 }
 
-.carousel-item img{
-	border-radius: 7%;
-}
 
 .carousel-item h1{
     font-size: 45px;
@@ -782,10 +798,10 @@ table tr:nth-child(even){
 .carousel-caption{
 	background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2.5px);
-		
+
 }
 
-@media screen and (max-device-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
 
 	.carousel-container{
 		display: block;
@@ -804,14 +820,16 @@ table tr:nth-child(even){
 
     .home-img{
         margin-top: 15%;
-        width: 70%;
+        width: 100%;
         margin-left: 15%;
         padding-top: 0;
     }
 
     .random-container{
         width: 100%;
-        height: 50%;
+        height: 40%;
+        bottom: 0;
+        padding-top: 15%;
     }
 
     .home-txt h1{
@@ -985,7 +1003,208 @@ table tr:nth-child(even){
     }
 }
 
-@media screen and (min-device-width: 992px) and (max-device-width: 1024px){
+@media screen and (max-width: 768px){
+    .carousel-container{
+		display: block;
+	}
+	.popular-container{
+		display: none;
+	}
+
+    .home-image{
+        width: 70%;
+    }
+
+    .random-container{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        display: flow-root;
+        bottom: 0;
+        padding-top: 10%;
+    }
+
+    .home-text1{
+        font-size: 2em;
+    }
+
+    .about-container .about-image{
+        margin-top: 10px;
+        padding: 5rem;
+    }
+
+    .about-container .content{
+        margin: 10px;
+        width: 100%;
+    }
+
+    .about-container .content h3{
+        font-size: 30px;
+    }
+
+    .order-container .content .column .map{
+        margin-left: 25px;
+        width: 90vw;
+    }
+
+    .order-container .content .column .map iframe{
+        width: 100%;
+    }
+
+    .order-container .content .cadre{
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .carousel-container{
+		display: block;
+	}
+	.popular-container{
+		display: none;
+	}
+
+    .navbar{
+        height: 7%;
+        font-size: 10px;
+    }   
+
+    .home-image{
+        width: 70%;
+        margin-left: 15%;
+        margin-top: 6%;
+    }
+
+    .random-container{
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        display: flow-root;
+        bottom: 0;
+        padding-top: 10%;
+    }
+
+    .btn-container{
+        margin-left: 8%;
+    }
+    
+    .cmd-btn{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        margin-right:1%;
+        padding: 1px;
+    }
+    .menu-btn{
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .about-container .about-image{
+        margin: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .about-container .about-image img{
+        width: 900px;
+        height: 300px;
+    }
+
+    .about-container .content{
+        margin: 5px;
+        padding: 3rem;
+        height: 350px;
+    }
+
+    .about-container .content h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .about-container .content p{
+        font-size: 12px;
+    }
+
+    .menu ul .btn,
+    .menu ul .btn.btn-active{
+        font-size: 25px;
+        margin: 10px;
+        line-height: 0;
+    }
+
+    .menu .container .item .first-line h3{
+        font-size: 20px;
+    }
+
+    /*.order-container .content .column .map{
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .order-container .content .column .map iframe{
+        height: 50%;
+    }    */
+
+    .order-container{
+        display: none;
+    }
+    
+    .order-container .column .map{
+        margin:5% 0 0 0;
+        margin-left: 5vw;
+    }
+    
+    iframe{
+        width: 90vw;
+        border-radius: 3rem;
+    }
+    
+    .order-container .column h3{
+        font-size: 35px;
+        margin-top: 1.5rem;
+    }
+    
+    .order-container .content .cadre{
+        justify-content: normal;
+        margin-left: 10vw;
+        width: 80%;
+        height: 530px;
+        padding-left: 2rem;
+    }
+
+    .order-container .content .cadre .column{
+        margin-left: 10px;
+    }
+
+    table{
+        height: 400px;
+        width: 290px;
+        margin-top: 2rem;
+    }
+
+    table th, td{
+        font-size: 20px;
+    }
+
+    .order-container .column .info{
+        font-size: 25px;
+        margin-top: 35%;
+    }
+}
+
+/*TODO: 334 and less,
+        768 and up
+        popular -> add title in carousel
+        buttons home
+        order in everything*/
+
+/*@media screen and (min-width: 992px) and (max-width: 1024px){
     .home-img{
         margin-top: 7%;
         width: 70%;
@@ -1006,6 +1225,9 @@ table tr:nth-child(even){
         width: 100%;
         padding-left: 10%;
         padding-top: 10%;
+        position: absolute;
+        display: flow-root;
+        bottom: 0;
     }
 
     .about-container img{
@@ -1127,4 +1349,4 @@ table tr:nth-child(even){
     .order-container .column .reseaux p i:active{
         color: rgb(116, 197, 116);
     }
-}
+}*/
