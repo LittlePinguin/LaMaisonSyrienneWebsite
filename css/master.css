@@ -3,6 +3,7 @@
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
+	font-display: swap;
 }
 
 
@@ -127,6 +128,7 @@ nav.navbar.transparent {
 @font-face {
 	font-family: "MyFont";
 	src: url('../fonts/BittersweetNF.ttf');
+	font-display: swap;
 }
 
 .random-container{
