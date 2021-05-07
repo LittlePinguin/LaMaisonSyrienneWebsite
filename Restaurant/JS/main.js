@@ -75,7 +75,7 @@ $(document).ready(function(){
                 "display":"flex"
             });
         }
-        if (w_w < 991){
+        if (w_w < 1024){
             // about change transition in phone version
             $('.about-container .img-fluid').attr('data-aos', 'fade-right');
 
@@ -94,12 +94,12 @@ $(document).ready(function(){
                 });
             });
 
-            $('.nav-tabs li a').on('touchstart', function(){
+            $('.nav-tabs .nav-link').on('touchstart', function(){
                 $(this).css({
                     "color":"#151f28"
                 });
             });
-            $('.nav-tabs li a').on('touchend', function(){
+            $('.nav-tabs .nav-link').on('touchend', function(){
                 $(this).css({
                     "color":"white"
                 });
