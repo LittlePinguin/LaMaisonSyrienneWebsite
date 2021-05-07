@@ -105,7 +105,7 @@ nav.navbar.transparent {
     display: inline-block;
 	width: 100%;
     min-height: auto;
-    background: url(../images/HomeBg.png) no-repeat;
+    background: url(../images/HomeBg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -313,7 +313,7 @@ nav.navbar.transparent {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-	background: url(../images/Bg6.jpg) no-repeat;
+	background: url(../images/Bg6.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -323,7 +323,7 @@ nav.navbar.transparent {
 .about-container img{
     height: 30rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
-    background: url(../images/About.jpg);
+    background: url(../images/imgAbout.webp);
     background-size: cover;
     margin-right: -45px;
 }
@@ -357,7 +357,7 @@ nav.navbar.transparent {
 /*------------------------------------- */
 
 .menu{
-	background: url(../images/top-view-food-frame-with-copy-space.jpg) no-repeat;
+	background: url(../images/food-frame.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -463,7 +463,7 @@ nav.navbar.transparent {
 .popular-container{
     min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
+	background: url(../images/falafel.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -790,7 +790,7 @@ table tr:nth-child(even){
 .carousel-container{
 	min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
+	background: url(../images/falafel.webp) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -1058,7 +1058,7 @@ table tr:nth-child(even){
     .navbar{
         height: 7%;
         font-size: 10px;
-    }   
+    }
 
     .home-image{
         width: 70%;
@@ -1078,7 +1078,7 @@ table tr:nth-child(even){
     .btn-container{
         margin-left: 8%;
     }
-    
+
     .cmd-btn{
         display: inline-block;
         width: 150px;
@@ -1098,7 +1098,7 @@ table tr:nth-child(even){
         width: 100%;
         padding: 0;
     }
-    
+
     .about-container .about-image img{
         width: 900px;
         height: 300px;
@@ -1142,22 +1142,22 @@ table tr:nth-child(even){
     .order-container{
         display: none;
     }
-    
+
     .order-container .column .map{
         margin:5% 0 0 0;
         margin-left: 5vw;
     }
-    
+
     iframe{
         width: 90vw;
         border-radius: 3rem;
     }
-    
+
     .order-container .column h3{
         font-size: 35px;
         margin-top: 1.5rem;
     }
-    
+
     .order-container .content .cadre{
         justify-content: normal;
         margin-left: 10vw;
@@ -1201,7 +1201,7 @@ table tr:nth-child(even){
     }
 
     .about-container .content{
-        padding-top: 2.5rem; 
+        padding-top: 2.5rem;
     }
 
     .about-container .content h3{
@@ -1222,7 +1222,7 @@ table tr:nth-child(even){
         margin-left: 15%;
         padding-top: 0;
     }
-    
+
     .home-text1{
         font-size: 70px;
     }
@@ -1257,7 +1257,7 @@ table tr:nth-child(even){
     .about-container .content p{
         font-size: 200%;
     }
-    
+
     .menu .container .item .first-line{
         font-size: 40px;
     }
