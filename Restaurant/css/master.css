@@ -839,7 +839,20 @@ table tr:nth-child(even){
 
 }
 
-@media screen and (min-width: 769px) and (max-width: 991px){
+@media screen and (min-width: 992px) and (max-width: 1179px){
+    .about-container .about-image{
+        margin-top: 10px;
+    }
+    
+    .about-container .content{
+        padding: 5.5rem;
+        height: auto;
+        width: 70%;
+        margin-bottom: 10px;
+    }    
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
 	.carousel-container{
 		display: block;
 	}
