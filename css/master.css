@@ -1,5 +1,18 @@
 
 
+/*  display: inline-block;
+    color: green;
+    background-color: green;
+    width: 40%;
+    padding: 2% 0px;
+    text-align: center;
+    border: 0px solid;
+    outline: solid 1px;
+    outline-offset: 0px;
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out 0s; */
+
+
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
@@ -174,24 +187,40 @@ nav.navbar.transparent {
 
 .cmd-btn{
 	display: inline-block;
-	width: 200px;
-	height: 50px;
-	color: white;
+    color: white;
     background-color: #135419;
-    text-align-last: center;
-    padding-top: 1.5%;
+    width: 40%;
+    padding: 2% 0px;
+    text-align: center;
     border: 2px solid white;
-	margin-right:1%;
+    outline: solid 1px;
+    outline-offset: 0px;
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out 0s;
 }
+
 .menu-btn{
+
 	display: inline-block;
-	width: 200px;
-	height: 50px;
-	color: #0e432a;
-    background-color: #d8d8d8;
-    text-align-last: center;
-    padding-top: 1.5%;
+    color: #0e432a;
+	background-color: #d8d8d8;
+    width: 40%;
+    padding: 2% 0px;
+    text-align: center;
     border: 2px solid #0e432a;
+    outline: solid 1px;
+    outline-offset: 0px;
+    transform: scale(0.95);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.cmd-link{
+	text-decoration: none;
+	color:white;
+}
+.menu-link{
+	color: #135419;
+	text-decoration: none;
 }
 
 .sqipple {
