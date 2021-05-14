@@ -3,6 +3,7 @@
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
+	font-display: swap;
 }
 
 
@@ -105,7 +106,7 @@ nav.navbar.transparent {
     display: inline-block;
 	width: 100%;
     min-height: auto;
-    background: url(../images/HomeBg.png) no-repeat;
+    background: url(../images/HomeBg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -127,6 +128,7 @@ nav.navbar.transparent {
 @font-face {
 	font-family: "MyFont";
 	src: url('../fonts/BittersweetNF.ttf');
+	font-display: swap;
 }
 
 .random-container{
@@ -313,7 +315,7 @@ nav.navbar.transparent {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-	background: url(../images/Bg6.jpg) no-repeat;
+	background: url(../images/Bg6.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -323,7 +325,7 @@ nav.navbar.transparent {
 .about-container img{
     height: 30rem;
     border-radius: 30% 70% 25% 75% / 49% 32% 68% 51% ;
-    background: url(../images/About.jpg);
+    background: url(../images/imgAbout.webp);
     background-size: cover;
     margin-right: -45px;
 }
@@ -357,7 +359,7 @@ nav.navbar.transparent {
 /*------------------------------------- */
 
 .menu{
-	background: url(../images/top-view-food-frame-with-copy-space.jpg) no-repeat;
+	background: url(../images/food-frame.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -463,7 +465,7 @@ nav.navbar.transparent {
 .popular-container{
     min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
+	background: url(../images/falafel.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -790,7 +792,7 @@ table tr:nth-child(even){
 .carousel-container{
 	min-height: 100vh;
 	padding-top: 2%;
-	background: url(../images/falafel-hummus-pita-middle-eastern-arabic-dishes-halal-food-top-view-copy-space.jpg) no-repeat;
+	background: url(../images/falafel.webp) no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -843,13 +845,13 @@ table tr:nth-child(even){
     .about-container .about-image{
         margin-top: 10px;
     }
-    
+
     .about-container .content{
         padding: 5.5rem;
         height: auto;
         width: 70%;
         margin-bottom: 10px;
-    }    
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -1071,7 +1073,7 @@ table tr:nth-child(even){
     .navbar{
         height: 7%;
         font-size: 10px;
-    }   
+    }
 
     .home-image{
         width: 70%;
@@ -1091,7 +1093,7 @@ table tr:nth-child(even){
     .btn-container{
         margin-left: 8%;
     }
-    
+
     .cmd-btn{
         display: inline-block;
         width: 150px;
@@ -1111,7 +1113,7 @@ table tr:nth-child(even){
         width: 100%;
         padding: 0;
     }
-    
+
     .about-container .about-image img{
         width: 900px;
         height: 300px;
@@ -1152,23 +1154,23 @@ table tr:nth-child(even){
         height: 50%;
     }    */
 
-    
+
     .order-container .column .map{
         margin:5% 0 0 0;
         margin-left: 5vw;
     }
-    
+
     iframe{
         width: 90vw;
         border-radius: 3rem;
     }
-    
+
     .order-container .column h3{
         font-size: 18px;
         margin-top: 1.5rem;
         text-align: center;
     }
-    
+
     .order-container .content .cadre{
         justify-content: normal;
         width: 95%;
@@ -1195,7 +1197,7 @@ table tr:nth-child(even){
         font-size: 15px;
         padding: 0.4rem 1rem;
     }
-    
+
     table td{
         padding: 0.2rem 0.7rem;
     }
@@ -1221,7 +1223,7 @@ table tr:nth-child(even){
     }
 
     .about-container .content{
-        padding-top: 2.5rem; 
+        padding-top: 2.5rem;
     }
 
     .about-container .content h3{
