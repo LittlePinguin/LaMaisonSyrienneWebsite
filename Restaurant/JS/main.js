@@ -1,44 +1,17 @@
 $(document).ready(function(){
 
+    //screen.orientation.lock("portrait")
+
     $(function() {
         AOS.init({
             delay: 100,
-            duration: 1000
+            duration: 1000,
+            disable: function() {
+                var maxWidth = 991;
+                return $(window).width() < maxWidth;
+            }
         });
     });
-
-    // function detectMob() {
-    //     const toMatch = [
-    //         /Android/i,
-    //         /webOS/i,
-    //         /iPhone/i,
-    //         /iPad/i,
-    //         /iPod/i,
-    //         /BlackBerry/i,
-    //         /Windows Phone/i
-    //     ];
-    //
-    //     return toMatch.some((toMatchItem) => {
-    //         return navigator.userAgent.match(toMatchItem);
-    //     });
-    // }
-    //
-    //
-    // if(!detectMob()){
-    //     $('.popular-container').removeClass("hidden");
-    // }else{
-    //     $('.carousel-container').removeClass("hidden");
-    // }
-
-
-    //
-    // var size = $(window).width();
-    //
-    // if(size > 991){
-    //     $('.popular-container').removeClass("hidden");
-    // }else{
-    //     $('.carousel-container').removeClass("hidden");
-    // }
 
     $('.navbar-toggler').focus(function(){
         $('.nav-tabs').removeClass("tab-btm");
@@ -76,9 +49,6 @@ $(document).ready(function(){
             });
         }
         if (w_w < 1024){
-            // about change transition in phone version
-            $('.about-container .img-fluid').attr('data-aos', 'fade-right');
-
             $('.scroll-btn .scroll-top-icon').on('touchstart', function(){
                 $(this).css({
                     "color":"rgb(47, 194, 47)",
