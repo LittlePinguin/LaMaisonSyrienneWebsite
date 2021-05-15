@@ -1,12 +1,8 @@
-
-
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
-	font-display: swap;
+    font-display: swap;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -24,8 +20,6 @@ html {
     text-shadow: 4px 6px 9px #000000a3;
 	color: #fff;
 	margin-bottom: 0;
-
-
 }
 
 .control{
@@ -128,7 +122,6 @@ nav.navbar.transparent {
 @font-face {
 	font-family: "MyFont";
 	src: url('../fonts/BittersweetNF.ttf');
-	font-display: swap;
 }
 
 .random-container{
@@ -330,6 +323,7 @@ nav.navbar.transparent {
     margin-right: -45px;
 }
 
+
 .about-container .content{
     height: 30rem;
     width: 50%;
@@ -406,7 +400,7 @@ nav.navbar.transparent {
 
 .menu .container .item{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 8rem;
     display: flex;
     background-color: #fff;
     opacity: 0.9;
@@ -421,24 +415,24 @@ nav.navbar.transparent {
 }
 
 .menu .container .item .first-line{
-    font-size: 15px;
     display: flex;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
 }
 
 .menu .container .item .price{
-    /*padding-left: 10rem;*/
+    font-size: 20px;
+    position: absolute;
+    right: 8em;
 }
 
 .menu .container .item p{
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
 }
 .item {
   position: relative;
   z-index : 1;
-
 }
 
 .item:before {
@@ -842,16 +836,22 @@ table tr:nth-child(even){
 }
 
 @media screen and (min-width: 992px) and (max-width: 1179px){
+    .home-img{
+        margin-top: 20%;
+    }  
+    .random-container{
+        padding-top: 20%;
+    }
     .about-container .about-image{
         margin-top: 10px;
     }
-
+    
     .about-container .content{
         padding: 5.5rem;
         height: auto;
         width: 70%;
         margin-bottom: 10px;
-    }
+    }    
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
@@ -942,7 +942,7 @@ table tr:nth-child(even){
     }
 
     .menu .container .item h3{
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .menu .container .item p{
@@ -1016,6 +1016,7 @@ table tr:nth-child(even){
 
     .home-image{
         width: 70%;
+        margin-left: 15%;
     }
 
     .random-container{
@@ -1024,11 +1025,14 @@ table tr:nth-child(even){
         position: absolute;
         display: flow-root;
         bottom: 0;
-        padding-top: 10%;
+        padding-top: 7%;
     }
 
     .home-text1{
         font-size: 2em;
+    }
+    .home-text2{
+        font-size: 1.2em;
     }
 
     .about-container .about-image{
@@ -1045,13 +1049,29 @@ table tr:nth-child(even){
         font-size: 30px;
     }
 
+    .menu .container .item{
+        padding: 2rem 2rem;
+    }
+    
+    .menu .container .item .price{
+        font-size: 15px;
+        right: 2em;
+    }
+
+    .menu .container .item p{
+        font-size: 15px;
+    }
+
     .order-container .content .column .map{
-        margin-left: 25px;
+        margin:5% 0 0 0;
+        margin-left: 35px;
         width: 90vw;
     }
 
     .order-container .content .column .map iframe{
         width: 100%;
+        border-radius: 1rem;
+        height: 200px;
     }
 
     .order-container .content .cadre{
@@ -1063,13 +1083,6 @@ table tr:nth-child(even){
 }
 
 @media screen and (max-width: 576px){
-    .carousel-container{
-		display: block;
-	}
-	.popular-container{
-		display: none;
-	}
-
     .navbar{
         height: 7%;
         font-size: 10px;
@@ -1079,6 +1092,13 @@ table tr:nth-child(even){
         width: 70%;
         margin-left: 15%;
         margin-top: 6%;
+    }
+
+    .home-text1{
+        font-size: 2em;
+    }
+    .home-text2{
+        font-size: 1.42em;
     }
 
     .random-container{
@@ -1093,7 +1113,7 @@ table tr:nth-child(even){
     .btn-container{
         margin-left: 8%;
     }
-
+    
     .cmd-btn{
         display: inline-block;
         width: 150px;
@@ -1110,10 +1130,10 @@ table tr:nth-child(even){
 
     .about-container .about-image{
         margin: 10px;
-        width: 100%;
+        width: 90%;
         padding: 0;
     }
-
+    
     .about-container .about-image img{
         width: 900px;
         height: 300px;
@@ -1141,42 +1161,37 @@ table tr:nth-child(even){
         line-height: 0;
     }
 
+    .menu ul .btn:hover{
+        font-size: 180%;
+    }
+
     .menu .container .item .first-line h3{
         font-size: 20px;
     }
-
-    /*.order-container .content .column .map{
-        width: 90%;
-        margin-left: 20px;
-    }
-
-    .order-container .content .column .map iframe{
-        height: 50%;
-    }    */
-
-
-    .order-container .column .map{
+    
+    .order-container .content .column .map{
         margin:5% 0 0 0;
-        margin-left: 5vw;
+        margin-left: 18px;
     }
-
+    
     iframe{
         width: 90vw;
-        border-radius: 3rem;
+        border-radius: 1rem;
+        height: 150px;
     }
-
+    
     .order-container .column h3{
         font-size: 18px;
         margin-top: 1.5rem;
         text-align: center;
     }
-
+    
     .order-container .content .cadre{
         justify-content: normal;
         width: 95%;
         height: 400px;
-        padding-left: 1rem;
-        padding-top: 7%;
+        padding-left: 10px;
+        padding-top: 5%;
     }
 
     .order-container .content .cadre .column{
@@ -1197,7 +1212,7 @@ table tr:nth-child(even){
         font-size: 15px;
         padding: 0.4rem 1rem;
     }
-
+    
     table td{
         padding: 0.2rem 0.7rem;
     }
@@ -1223,7 +1238,7 @@ table tr:nth-child(even){
     }
 
     .about-container .content{
-        padding-top: 2.5rem;
+        padding-top: 2.5rem; 
     }
 
     .about-container .content h3{
