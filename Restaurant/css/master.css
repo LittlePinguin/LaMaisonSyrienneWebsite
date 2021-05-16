@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Pacifico";
 	src: url('../fonts/Pacifico-Regular.ttf');
-    font-display: swap;
+    	font-display: swap;
 }
 
 html {
@@ -786,6 +786,7 @@ table tr:nth-child(even){
 .carousel-container{
 	min-height: 100vh;
 	padding-top: 2%;
+	padding-bottom: 5%;
 	background: url(../images/falafel.webp) no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -832,29 +833,40 @@ table tr:nth-child(even){
 .carousel-caption{
 	background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2.5px);
+	display: block!important;
+}
 
+
+@media screen and (min-width: 993px) and (max-width: 1112px){
+	.menu-btn{
+		width: 13rem;
+	}
+	.cmd-btn{
+		width: 13rem;
+	}
 }
 
 @media screen and (min-width: 992px) and (max-width: 1179px){
     .home-img{
         margin-top: 20%;
-    }  
+    }
     .random-container{
         padding-top: 20%;
     }
     .about-container .about-image{
         margin-top: 10px;
     }
-    
+
     .about-container .content{
         padding: 5.5rem;
         height: auto;
         width: 70%;
         margin-bottom: 10px;
-    }    
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
+
 	.carousel-container{
 		display: block;
 	}
@@ -886,16 +898,19 @@ table tr:nth-child(even){
         font-size: 45px;
     }
 
+	.btn-container{
+		position: absolute;
+    	bottom: 3rem;
+	}
+
     .cmd-btn{
-        width: 170px;
-        height: 4vh;
-        font-size: 150%;
+		font-size: 150%;
+	    width: 13em;
     }
 
     .menu-btn{
-        width: 170px;
-        height: 4vh;
-        font-size: 150%;
+		font-size: 150%;
+	    width: 13em;
     }
 
     .about-container img{
@@ -1007,6 +1022,7 @@ table tr:nth-child(even){
 }
 
 @media screen and (max-width: 768px){
+
     .carousel-container{
 		display: block;
 	}
@@ -1052,7 +1068,7 @@ table tr:nth-child(even){
     .menu .container .item{
         padding: 2rem 2rem;
     }
-    
+
     .menu .container .item .price{
         font-size: 15px;
         right: 2em;
@@ -1113,19 +1129,20 @@ table tr:nth-child(even){
     .btn-container{
         margin-left: 8%;
     }
-    
+
     .cmd-btn{
-        display: inline-block;
-        width: 150px;
-        text-align: center;
-        margin-right:1%;
-        padding: 1px;
+		margin-right: 3px;
+	    display: inline-block;
+	    width: 150px;
+	    text-align: center;
     }
     .menu-btn{
-        display: inline-block;
-        width: 150px;
-        text-align: center;
-        padding: 10px;
+		display: inline-block;
+		width: 150px;
+		text-align: center;
+		padding-top: 20px;
+		position: absolute;
+		height: 3.8em;
     }
 
     .about-container .about-image{
@@ -1133,7 +1150,7 @@ table tr:nth-child(even){
         width: 90%;
         padding: 0;
     }
-    
+
     .about-container .about-image img{
         width: 900px;
         height: 300px;
@@ -1168,24 +1185,24 @@ table tr:nth-child(even){
     .menu .container .item .first-line h3{
         font-size: 20px;
     }
-    
+
     .order-container .content .column .map{
         margin:5% 0 0 0;
         margin-left: 18px;
     }
-    
+
     iframe{
         width: 90vw;
         border-radius: 1rem;
         height: 150px;
     }
-    
+
     .order-container .column h3{
         font-size: 18px;
         margin-top: 1.5rem;
         text-align: center;
     }
-    
+
     .order-container .content .cadre{
         justify-content: normal;
         width: 95%;
@@ -1212,7 +1229,7 @@ table tr:nth-child(even){
         font-size: 15px;
         padding: 0.4rem 1rem;
     }
-    
+
     table td{
         padding: 0.2rem 0.7rem;
     }
@@ -1238,7 +1255,7 @@ table tr:nth-child(even){
     }
 
     .about-container .content{
-        padding-top: 2.5rem; 
+        padding-top: 2.5rem;
     }
 
     .about-container .content h3{
@@ -1246,8 +1263,261 @@ table tr:nth-child(even){
     }
 }
 
-/*TODO: 334 and less,
-        768 and up
-        popular -> add title in carousel
-        buttons home
-        order in everything*/
+@media screen and (max-width: 280px) {
+    .navbar{
+        height: 13%;
+        font-size: 12px;
+    }
+
+	.home-image {
+	    width: 35%;
+	    margin-left: -10%;
+	}
+
+	.cmd-btn{
+		width: 17vw;
+        line-height: 20px;
+        height: 2.5em;
+        font-size: 18px;
+	}
+
+	.menu-btn {
+	    position: absolute;
+	    height: 2.5em;
+        font-size: 18px;
+	    display: inline-block;
+	    color: #0e432a;
+	    background-color: #d8d8d8;
+	    width: 17vw;
+	    padding: 7% 0px;
+	    text-align: center;
+	}
+    .home-text2{
+        font-size: 1.3em;
+    }
+    .about-container .content{
+        padding: 2rem;
+    }
+    .order-container .content .cadre{
+        display: block;
+        height: auto;
+        padding-left: 0;
+    }
+    .order-container .content .cadre .column{
+        margin-left: 45px;
+    }
+    .order-container .column h3{
+        font-size: 25px;
+        margin-left: -50px;
+    }
+    .order-container .column .info{
+        margin-top: 20%;
+        font-size: 14px;
+    }
+    .order-container .column.contact{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 769px) and (max-width: 992px){
+    .carousel-container{
+		display: none;
+	}
+
+	.popular-container{
+		display: block;
+	}
+
+    .navbar{
+        height: 13%;
+        font-size: 12px;
+    }
+
+	.home-image {
+	    width: 35%;
+	    margin-left: -10%;
+	}
+
+	.cmd-btn{
+		width: 17vw;
+        line-height: 20px;
+        height: 2.5em;
+        font-size: 18px;
+	}
+
+	.menu-btn {
+	    position: absolute;
+	    height: 2.5em;
+        font-size: 18px;
+	    display: inline-block;
+	    color: #0e432a;
+	    background-color: #d8d8d8;
+	    width: 17vw;
+	    padding: 7% 0px;
+	    text-align: center;
+	}
+
+	.random-container {
+		padding-top: 10%;
+	    position: absolute;
+	    display: flow-root;
+	    bottom: 0;
+		width: 50%;
+		height:100%;
+	}
+	.about-container img {
+	    height: 25rem;
+	    margin-left: 2em;
+	    width: 80%;
+		margin-right: 0;
+	}
+	.about-container .about-image {
+	    padding: 1rem;
+	}
+	.about-container .content {
+	    margin: 10px;
+	    width: 90%;
+	}
+    iframe{
+        height: 200px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	.carousel-container{
+		display: none;
+	}
+
+	.popular-container{
+		display: block;
+	}
+
+	.home-image {
+	    width: 50%;
+	    margin-left: 0;
+	}
+
+	.cmd-btn{
+		width: 18vw;
+        height: 3.5em;
+	}
+
+	.menu-btn {
+	    position: absolute;
+	    height: 3.5em;
+	    display: inline-block;
+	    color: #0e432a;
+	    background-color: #d8d8d8;
+	    width: 18vw;
+	    padding: 5% 0px;
+	    text-align: center;
+	}
+
+	.random-container {
+		padding-top: 20%;
+	    position: absolute;
+	    display: flow-root;
+	    bottom: 0;
+		width: 50%;
+		height:100%;
+	}
+	.about-container img {
+	    height: 20rem;
+	    margin-left: 2em;
+	    width: 85%;
+		margin-right: 0;
+	}
+	.about-container .about-image {
+	    padding: 1rem;
+	}
+	.about-container .content {
+	    margin: 10px;
+	    width: 90%;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 576px){
+    .carousel-container{
+		display: none;
+	}
+
+	.popular-container{
+		display: block;
+	}
+
+    .navbar{
+        height: 14%;
+        font-size: 12px;
+    }
+
+	.home-image {
+	    width: 40%;
+	    margin-left: 5%;
+	}
+
+	.cmd-btn{
+		width: 19vw;
+        line-height: 15px;
+        height: 2.5em;
+        font-size: 15px;
+	}
+
+	.menu-btn {
+	    position: absolute;
+	    height: 2.5em;
+        font-size: 15px;
+	    display: inline-block;
+	    color: #0e432a;
+	    background-color: #d8d8d8;
+	    width: 18vw;
+	    padding: 2.5% 0px;
+	    text-align: center;
+	}
+
+	.random-container {
+		padding-top: 17%;
+	    position: absolute;
+	    display: flow-root;
+	    bottom: 0;
+		width: 50%;
+		height: 100%;
+	}
+    .home-text1{
+        font-size: 1.7em;
+    }
+    .home-text2{
+        font-size: 1.1em;
+    }
+
+	.about-container img {
+	    height: 25rem;
+	    margin-left: 2em;
+	    width: 80%;
+		margin-right: 0;
+	}
+	.about-container .about-image {
+	    padding: 1rem;
+	}
+	.about-container .content {
+	    margin: 10px;
+	    width: 90%;
+	}
+
+    iframe{
+        height: 200px;
+    }
+    .order-container .content .cadre .column{
+        margin-left: 50px;
+    }
+    .order-container .content .cadre{
+        padding-top: 0;
+        height: 360px;
+    }
+    .order-container .column h3{
+        font-size: 25px;
+    }
+    .order-container .column .info{
+        margin-top: 40%;
+        font-size: 15px;
+    }
+}
