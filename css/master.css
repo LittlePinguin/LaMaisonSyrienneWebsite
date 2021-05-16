@@ -165,27 +165,9 @@ nav.navbar.transparent {
 	margin-left: 13%;
 }
 
-/*.cmd-btn{
+.inlineblock{
 	display: inline-block;
-	width: 200px;
-	height: 50px;
-	color: white;
-    background-color: #135419;
-    text-align-last: center;
-    padding-top: 1.5%;
-    border: 2px solid white;
-	margin-right:1%;
 }
-.menu-btn{
-	display: inline-block;
-	width: 200px;
-	height: 50px;
-	color: #0e432a;
-    background-color: #d8d8d8;
-    text-align-last: center;
-    padding-top: 1.5%;
-    border: 2px solid #0e432a;
-}*/
 
 .cmd-btn{
 	display: inline-block;
@@ -817,11 +799,11 @@ table tr:nth-child(even){
 
 
 .carousel-item h1{
-    font-size: 45px;
+    font-size: 20px;
 }
 
 .carousel-item p{
-    font-size: 35px;
+    font-size: 15px;
 }
 
 .carousel-container{
@@ -835,7 +817,6 @@ table tr:nth-child(even){
     backdrop-filter: blur(2.5px);
 	display: block!important;
 }
-
 
 @media screen and (min-width: 993px) and (max-width: 1112px){
 	.menu-btn{
@@ -1142,7 +1123,7 @@ table tr:nth-child(even){
 		text-align: center;
 		padding-top: 20px;
 		position: absolute;
-		height: 3.8em;
+		height: 4.7em;
     }
 
     .about-container .about-image{
@@ -1263,8 +1244,67 @@ table tr:nth-child(even){
     }
 }
 
-/*TODO: 334 and less,
-        768 and up
-        popular -> add title in carousel
-        buttons home
-        order in everything*/
+
+@media screen and (orientation: landscape) and (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	.carousel-container{
+		display: none;
+	}
+
+	.popular-container{
+		display: block;
+	}
+
+	.home-image {
+	    width: 50%;
+	    margin-left: 0;
+	}
+
+	.cmd-btn{
+		width: 17vw;
+	}
+
+	.menu-btn {
+	    position: absolute;
+	    height: 4.6em;
+	    display: inline-block;
+	    color: #0e432a;
+	    background-color: #d8d8d8;
+	    width: 17vw;
+	    padding: 7% 0px;
+	    text-align: center;
+	}
+
+	.random-container {
+		padding-top: 20%;
+	    position: absolute;
+	    display: flow-root;
+	    bottom: 0;
+		width: 50%;
+		height:100%;
+	}
+	.about-container img {
+	    height: 20rem;
+	    margin-left: 2em;
+	    width: 85%;
+		margin-right: 0;
+	}
+	.about-container .about-image {
+	    padding: 1rem;
+	}
+	.about-container .content {
+	    margin: 10px;
+	    width: 90%;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 576px){
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 334px){
+
+}
