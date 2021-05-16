@@ -1265,32 +1265,28 @@ table tr:nth-child(even){
 
 @media screen and (max-width: 280px) {
     .navbar{
-        height: 13%;
-        font-size: 12px;
+        height: auto;
+        font-size: 10px;
+    }
+    .nav-link{
+        padding: 0.4rem;
     }
 
 	.home-image {
-	    width: 35%;
-	    margin-left: -10%;
+	    width: 85%;
+	    margin-left: 10%;
 	}
 
 	.cmd-btn{
-		width: 17vw;
         line-height: 20px;
         height: 2.5em;
         font-size: 18px;
 	}
 
 	.menu-btn {
-	    position: absolute;
 	    height: 2.5em;
         font-size: 18px;
-	    display: inline-block;
-	    color: #0e432a;
-	    background-color: #d8d8d8;
-	    width: 17vw;
-	    padding: 7% 0px;
-	    text-align: center;
+	    padding: 3% 0px;
 	}
     .home-text2{
         font-size: 1.3em;
@@ -1311,8 +1307,9 @@ table tr:nth-child(even){
         margin-left: -50px;
     }
     .order-container .column .info{
-        margin-top: 20%;
+        margin-top: 12%;
         font-size: 14px;
+        margin-left: 17px;
     }
     .order-container .column.contact{
         margin-top: 50px;
