@@ -1,0 +1,881 @@
+
+<!-- TODO: Menu > taille de police trop petite + allignement des prix -->
+<!-- TODO: Populaires > disparait apres transition (animation) -->
+<!-- TODO: Populaires > hover animation : ajout d'un panneau contenant plus de detail sinon pas d'animation -->
+<!-- TODO: Order Page >  aggrandir la taille de la police (panneau trop vide) -->
+<!-- menu normal font with letter spacing + maj -->
+<!-- price : display : flex + justify content : space between -->
+
+
+<!DOCTYPE html>
+<html id="top-page" lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>LaMaisonSyrienne</title>
+        <link rel="icon" href="images/icone.webp">
+        <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link id="MyStyle" rel="stylesheet" href="css/master.css">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body class="wrapper">
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <!-- Navigation Bar -->
+
+        <nav class="fixed-top navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html#top-page">La maison syrienne</a>
+                <ul class="tab-btm end-0 nav nav-tabs mb-lg-0">
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="https://www.instagram.com/lamaisonsyrienne/?hl=en" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" aria-current="page" href="https://www.facebook.com/La-Maison-Syrienne-454711738351791/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item hvr-bounce-to-bottom">
+                        <a class="nav-link" href="tel:0982477056"><i class="fas fa-phone"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="scroll-btn">
+            <a href="#" class="scroll-top-icon"><i class="fas fa-chevron-up fa-4x"></i></a>
+        </div>
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                        <!-- Home Page -->
+        <div class="home-container" id="home">
+            <div class="home-image">
+                <img src="images/logo.webp" class="home-img img-fluid">
+            </div>
+            <div class="random-container">
+                <div class="home-txt">
+                    <h1 style="color:white" class="home-text1">La Maison Syrienne</h1>
+                    <h4 style="color:white" class="home-text2">Mezzés, grillades, patisseries... <br>les meilleurs de Grenoble !</h4>
+                </div>
+                <div class="btn-container">
+                    <a href="#order" style="color:rgba(0,0,0,0)">
+                        <div class="cmd-btn sqipple shrink">
+                            <p class="cmd-link">Commander maintenant!</p>
+                        </div>
+                    </a>
+                    <a href="#menu" style="color:rgba(0,0,0,0)">
+                        <div class="menu-btn sqipple sqipple2 shrink">
+                            <p href="" class="menu-link">Notre menu</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                        <!-- About Page-->
+        <div class="about-container" id="about">
+            <div class="about-image">
+                <img src="images/imgAbout.webp" class="img-fluid" data-aos="fade-left">
+            </div>
+            <div class="content" data-aos="fade-right">
+                <h3>Qui sommes-nous ?</h3>
+                <p>Ayant récemment ouvert ses portes, ce restaurant se situe au coeur de la ville de Grenoble.
+                    Son cuisinier ainsi que son propriétaire d’origine syrienne y font découvrir une authentique
+                    cuisine faite avec amour. Avec ses deux salles et sa terrasse, <span>La Maison Syrienne</span> vous
+                    accueille en extérieur comme en intérieur pour un voyage culinaire au Moyen Orient.</p>
+            </div>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                        <!-- Menu Page -->
+        <section class="menu" id="menu">
+            <div class="menu-blur">
+                <h1 class="title">Notre <span>Menu</span></h1>
+                <ul class="control" style="padding-bottom: 0">
+                    <li class="btn btn-active" data-filter="mezzes">mezzés</li>
+                    <li class="btn" data-filter="assiettes">assiettes</li>
+                    <li class="btn" data-filter="grillades">grillades</li>
+                    <li class="btn" data-filter="sandwiches">sandwiches</li>
+                    <li class="btn" data-filter="desserts">desserts</li>
+                    <li class="btn" data-filter="boissons">boissons</li>
+                </ul>
+            </div>
+
+            <div class="container menu-container">
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Houmous</h3>
+                            <div class="price">4,50€</div>
+                        </div>
+                        <p>Purée de pois chiches, huile d'olive, crème de sésame.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Daka rouge</h3>
+                            <div class="price">4,50€</div>
+                        </div>
+                        <p>Piment fort, noix en poudre, huile d’olive, crème de sésame,
+                            mélasse de grenade.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Labené</h3>
+                            <div class="price">4,50€</div>
+                        </div>
+                        <p>Yaourt syrien, huile d’olive.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Feuille de vigne</h3>
+                            <div class="price">4,50€</div>
+                        </div>
+                        <p>Feuille de vigne farcie.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Makdouss</h3>
+                            <div class="price">4,50€</div>
+                        </div>
+                        <p>Aubergine farcie, huile d’olive.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Moutabel</h3>
+                            <div class="price">5,50€</div>
+                        </div>
+                        <p>Caviar d’aubergines grillées, huile d’olive,
+                            crème de sésames.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Moussaka</h3>
+                            <div class="price">5,50€</div>
+                        </div>
+                        <p>Aubergines, tomates, huile d’olive.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Taboulé syrien</h3>
+                            <div class="price">6,00€</div>
+                        </div>
+                        <p>Persil, tomates, boulghour, citron,
+                            huile d’olive.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Feuilleté au fromage</h3>
+                            <div class="price">6,00€</div>
+                        </div>
+                        <p>Feuille de brick, fromage syrien.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Sambousseke</h3>
+                            <div class="price">7,00€</div>
+                        </div>
+                        <p>Pâte à fatayer, viande de boeuf, oignon.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Fatayer</h3>
+                            <div class="price">7,00€</div>
+                        </div>
+                        <p>Pâte à fatayer, épinard, oignon.</p>
+                    </div>
+                </div>
+
+                <div class="item mezzes menu-last menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Kebbé</h3>
+                            <div class="price">8,00€</div>
+                        </div>
+                        <p>Viande de boeuf, boulghour, noix.</p>
+                    </div>
+                </div>
+
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Plat du jour</h3>
+                            <div class="price">12,50€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Falafel</h3>
+                            <div class="price">10,00€</div>
+                        </div>
+                        <p>Fatouche, 5 pièces de falafel, houmous.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Végétarienne</h3>
+                            <div class="price">12,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, falafel, houmous, moutabal,
+                            fatayer épinard, moussaka et daka rouge.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Makloubeh</h3>
+                            <div class="price">12,00€</div>
+                        </div>
+                        <p>Aubergines, riz, viande de boeuf, labené, falafel.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Dégustation</h3>
+                            <div class="price">12,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, kefta, samboussek,
+                            falafel, feuilleté au fromage, houmous, moutabel,
+                            <br> safiha et feuille de vigne.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Gourmande</h3>
+                            <div class="price">13,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, kebbé, samboussek,
+                            falafel, feuilleté au fromage, houmous, moutabel,
+                            <br> fatayer épinard, safiha et feuille de vigne.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mezzés pour 2 personnes</h3>
+                            <div class="price">28,00€</div>
+                        </div>
+                        <p>4 plats chauds et 4 plats froids.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mezzés pour 3 personnes</h3>
+                            <div class="price">46,50€</div>
+                        </div>
+                        <p>5 plats chauds et 5 plats froids.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mezzés pour 4 personnes</h3>
+                            <div class="price">64,00€</div>
+                        </div>
+                        <p>6 plats chauds et 6 plats froids.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mezzés pour 6 personnes</h3>
+                            <div class="price">96,00€</div>
+                        </div>
+                        <p>6 plats chauds et 6 plats froids.</p>
+                    </div>
+                </div>
+
+                <div class="item assiettes menu-last .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mezzés de La Maison Syrienne</h3>
+                            <div class="price">22,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous,
+                            moutabel, falafel, feuilleté au fromage,
+                            safiha, feuille de vigne, kebbé, sambousseke,
+                            deux brochettes de viande.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Kebab d'Alep</h3>
+                            <div class="price">13,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel,
+                             moussaka, riz, deux brochettes de viande de boeuf.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Taouk de Damas</h3>
+                            <div class="price">13,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel,
+                             moussaka, riz, deux brochettes de viande de boeuf.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mixte Syrien</h3>
+                            <div class="price">13,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel, moussaka,
+                            riz, une brochette de viande de boeuf,
+                            une brochette de blanc de poulet.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Chawarma</h3>
+                            <div class="price">15,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel,
+                             moussaka, riz, lamelles de viande de boeuf.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Agneau</h3>
+                            <div class="price">15,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel,
+                             moussaka, riz, deux brochettes d'agneau.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Grillades de La Maison Syrienne</h3>
+                            <div class="price">18,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, moussaka, riz,
+                            une brochette de viande de boeuf, une brochette
+                            de blanc de poulet, lamelles de viande de boeuf.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Royale</h3>
+                            <div class="price">20,00€</div>
+                        </div>
+                        <p>Taboulé syrien au persil, houmous, moutabel, moussaka,
+                            riz, une brochette de viande de boeuf, une brochette
+                             de blanc de poulet, lamelles de viande de boeuf.</p>
+                    </div>
+                </div>
+
+                <div class="item grillades menu-last menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Menu enfant</h3>
+                            <div class="price">6,00€</div>
+                        </div>
+                        <p>Frites + 1 brochette de viande au choix.</p>
+                    </div>
+                </div>
+
+                <div class="item sandwiches menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Falafel</h3>
+                            <div class="price">5,00€</div>
+                        </div>
+                        <p>Falafel, tomate, salade, sauce, mokhalale(cornichons).</p>
+                    </div>
+                </div>
+
+                <div class="item sandwiches menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Chiche taouk</h3>
+                            <div class="price">5,00€</div>
+                        </div>
+                        <p>Blanc de poulet grillé, houmous, tomate, salade,
+                            mokhalale(cornichons).</p>
+                    </div>
+                </div>
+
+                <div class="item sandwiches menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Chiche kebab</h3>
+                            <div class="price">5,00€</div>
+                        </div>
+                        <p>Viande de boeuf hachée, houmous, tomate, salade,
+                            mokhalale(cornichons).</p>
+                    </div>
+                </div>
+
+                <div class="item sandwiches menu-last menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Chawarma syrienne</h3>
+                            <div class="price">6,00€</div>
+                        </div>
+                        <p>Lamelles de viande de bœuf mariné grillé, houmous,
+                            tomate, salade, mokhalale(cornichons).</p>
+                    </div>
+                </div>
+
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mafrouka</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Pistaches et amandes.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mamoul mad</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Noix et pâte à base de semoule.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Baklava amande</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Amandes et pâte feuilletée.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Baklava pistache</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Pistaches et pâte feuilletée.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Nid d'oiseau</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Pistache, cheveux d'ange.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Majoua</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Noix, noix de cajou, amande, cheveux d'ange.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mabrouma</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Pistache, cheveux d'ange.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Corne de gazelle</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Amandes, pâte à base de semoule.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Amandine</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Amandes, pâte à base de semoule.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Boule coco</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Noix de coco, amandes.</p>
+                    </div>
+                </div>
+
+                <div class="item desserts menu-last menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Mouhalabia</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                        <p>Crème au lait et à la fleur d'oranger.</p>
+                    </div>
+                </div>
+
+                <div class="item boissons .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Thé syrien</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item boissons .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Café</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item boissons .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Cannette au choix 33cl</h3>
+                            <div class="price">1,50€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item boissons .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Bouteille eau minérale</h3>
+                            <div class="price">2,00€</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item boissons menu-last .menu-item">
+                    <!--<img src="images/popularFalafel.webp" alt="">-->
+                    <div class="info">
+                        <div class="first-line">
+                            <h3>Bouteille de soda 1.5L</h3>
+                            <div class="price">3,50€</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <!-- Popular Page -->
+        <div class="popular-container" id="popular">
+            <div class="title">Nos <span>Plats</span> les plus appréciés</div>
+            <div class="card-container">
+                <div class="card" data-aos="flip-up">
+                    <div class="content">
+                        <img src="images/mezzes.webp" alt="">
+                        <h3>Assiette Mezzés</h3>
+                        <div class="price">Prix voir menu</div>
+                    </div>
+                    <div class="details">
+                        <h3>Ingredients : </h3>
+                        <p>Assortiment de plats chauds et froids de Mezzés</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <div class="content">
+                        <img src="images/Mixte Syrien.webp" alt="">
+                        <h3>Mixte Syrien</h3>
+                        <div class="price">13,00€</div>
+                    </div>
+                    <div class="details">
+                        <h3>Ingredients : </h3>
+                        <p>Taboulé syrien au persil, <br> houmous, <br> moutabel,
+                            <br> moussaka, <br> riz, <br> 1 brochette de viande de boeuf,
+                            <br> 1 brochette de blanc de poulet.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <div class="content">
+                        <img src="images/mafrouka.webp" alt="">
+                        <h3>Mafrouka</h3>
+                        <div class="price">1,50€</div>
+                    </div>
+                    <div class="details">
+                        <h3>Ingredients : </h3>
+                        <p>Pistaches et amandes.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="flip-up">
+                    <div class="content">
+                        <img src="images/mabrouma.webp" alt="">
+                        <h3>Mabrouma</h3>
+                        <div class="price">1,50€</div>
+                    </div>
+                    <div class="details">
+                        <h3>Ingredients : </h3>
+                        <p>Pistaches et cheveux d’ange.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="title">Nos <span>Plats</span> les plus appréciés</div>
+            <div class="carousel-case">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/mafrouka.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Mafrouka</h1>
+                                <p>1,50€</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/mabrouma.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Mabrouma</h1>
+                                <p>1,50€</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/mezzes.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Assiette Mezzés</h1>
+                                <p>Prix voir menu</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Mixte Syrien.webp" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Mixte Syrien</h1>
+                                <p>13,00€</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+                    <!-- Order Page -->
+
+        <div class="order-container" id="order">
+            <div class="title">
+                <span>Commandez</span> maintenant !
+            </div>
+            <div class="content" data-aos="zoom-in">
+                <div class="column">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2811.6915066936463!2d5.729273015548377!3d45.193340679098675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478af48a9d4c680d%3A0xab2996c15ea98ba4!2s6%20Rue%20Chenoise%2C%2038000%20Grenoble!5e0!3m2!1sen!2sfr!4v1618306109390!5m2!1sen!2sfr"
+                            width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="cadre">
+                    <div class="column">
+                        <h3>Horaires d'ouverture</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Heure</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lundi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Mardi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercredi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeudi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendredi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Samedi</td>
+                                    <td>11h-21h</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimanche</td>
+                                    <td><span>fermé</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column">
+                        <h3>Contactez-nous</h3>
+                        <div class="info">
+                            <p><i class="fas fa-phone"></i><a href="tel:0982477056"> 09 82 47 70 56</a></p>
+                            <p><i class="fas fa-truck"></i><a target="_blank" href="https://www.ubereats.com/fr/lyon/food-delivery/la-maison-syrienne/vlS36siTR1WU67slSUrrsg"> Livraison Uber Eats</a></p>
+                            <div class="reseaux">
+                                <p><a href="https://www.instagram.com/lamaisonsyrienne/?hl=en"><i class="fa fa-instagram fa-2x"></i></a>
+                                    <a href="https://www.facebook.com/La-Maison-Syrienne-454711738351791/"><i class="fa fa-facebook-square fa-2x"></i></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/4b93f3e273.js" crossorigin="anonymous"></script>
+
+        <script src="JS/main.js"></script>
+
+    </body>
+</html>
